@@ -1,3 +1,6 @@
+"""Creates an animation covering the colonialisation of Australia and the impact on the Indigenous population
+"""
+
 import pandas as pd
 import re
 from datetime import date
@@ -16,6 +19,14 @@ import os
 os.environ['PROJ_LIB']='C:\\Users\\Andy\\Anaconda3\\pkgs\\proj4-5.2.0-ha925a31_1\\Library\\share'
 
 from mpl_toolkits.basemap import Basemap
+
+__author__ = "Andrew Arch"
+__copyright__ = "Copyright 2020"
+__license__ = "GPL"
+__version__ = "1.0.0"
+__maintainer__ = "Andrew Arch"
+__email__ = "andy.arch11@gmail.com"
+__status__ = "Production"
 
 #create figure to host animation.  N.B. if this is declared after Basemap, it will plot points to its own window
 fig = plt.figure(figsize=[17, 13], constrained_layout=True)

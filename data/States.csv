@@ -1,0 +1,23 @@
+YearEffectiveFrom,YearEffectiveTo,DateEffectiveFrom,GeoJsonFile,StateNameFile,Event
+1788,1824,1788-01-26,1788 States.json,1788 States.csv,"New South Wales established, inclusive of Norfolk Island and New Zealand"
+1825,1825,1825-07-16,1825 States.json,1825 States.csv,New South Wales border set at 129th meridian
+1826,1828,1825-12-03,1825 States.json,1826 States.csv,Van Diemen's Land proclaimed a separate colony
+1829,1831,1829-06-18,1825 States.json,1829 States.csv,Swan River Colony proclaimed
+1832,1836,1832,1825 States.json,1832 States.csv,Swan River Colony changed its name to Western Australia
+1837,1839,1836-12-28,1837 States.json,1836 States.csv,Province of South Australia proclaimed
+1840,1845,1840-11-16,1837 States.json,1836 States.csv,New Zealand constituted as a separate colony
+1846,1846,1846-02-17,1846 States.json,1846 States.csv,Colony of North Australia proclaimed
+1847,1850,1846-11-28,1837 States.json,1836 States.csv,Colony of North Australia revoked by Queen Victoria
+1851,1855,1851-07-01,1851 States.json,1851 States.csv,Colony of Victoria founded
+1856,1858,1856-01-01,1851 States.json,1856 States.csv,Van Diemen's Land name changed to Tasmania
+1859,1859,1859-06-06,1859 States.json,1859 States.csv,Queensland authorised as a separate colony
+1860,1861,1860,1860 States.json,1860 States.csv,South Australian border changed from 132nd meridian to 129th meridian
+1862,1862,1862-04-12,1862 States.json,1862 States.csv,Queensland border moved to 138th meridian
+1863,1900,1863-07-06,1863 States.json,1863 States.csv,Northern Territory annexed to South Australia
+1901,1910,1901-01-01,1863 States.json,1863 States.csv,Commonwealth of Australia proclaimed
+1911,1914,1911-01-01,1911 States.json,1911 States.csv,Federal Capital Territory established. Northern Territory transferred to Commonwealth control
+1915,1926,1915-07-12,1915 States.json,1915 States.csv,Jervis Bay Territory added to Federal Capital Territory
+1927,1930,1927-02-01,1927 States.json,1927 States.csv,Northern Territory divided into North Australia and Central Australia
+1931,1937,1931-06-12,1915 States.json,1915 States.csv,North Australia and Central Australia merge into the Northern Territory
+1938,1988,1938-07-29,1915 States.json,1938 States.csv,Federal Capital Territory renamed to Australian Capital Territory
+1989,2020,1989-05-11,1915 States.json,1989 States.csv,Jervis Bay becomes separate Commonwealth territory

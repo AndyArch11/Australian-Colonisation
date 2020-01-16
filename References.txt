@@ -1,0 +1,38 @@
+Json file mapping
+http://geojson.io
+
+Land
+http://gutenberg.net.au/mapsandcharts-land.html
+https://upload.wikimedia.org/wikipedia/commons/4/41/Mitchell_explorations_NSW.png
+https://trove.nla.gov.au/map
+
+Sea
+http://gutenberg.net.au/mapsandcharts-sea.html
+https://www.captaincooksociety.com/home/detail/the-first-voyage-1768-1771
+
+Population Stats
+https://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/3105.0.65.001Main+Features12016?OpenDocument
+https://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/3105.0.65.0012016?OpenDocument
+
+
+Missions
+http://oa.anu.edu.au/entity/14540?eid=14581
+https://en.wikipedia.org/wiki/Category:Australian_Aboriginal_missions
+
+Frontier War Conflicts
+https://www.australianfrontierconflicts.com.au/timeline-of-australian-frontier-conflicts/
+https://www.sciencespo.fr/mass-violence-war-massacre-resistance/fr/document/list-multiple-killings-aborigines-tasmania-1804-1835
+https://en.wikipedia.org/wiki/List_of_massacres_of_Indigenous_Australians
+https://c21ch.newcastle.edu.au/colonialmassacres/
+https://cv.vic.gov.au/media/oldmedia/5755/massacre_File0001.jpg
+http://www.teachingheritage.nsw.edu.au/section03/timeindig.php
+
+Deaths in Custody
+https://www.theguardian.com/australia-news/ng-interactive/2018/aug/28/deaths-inside-indigenous-australian-deaths-in-custody
+
+Epidemics
+https://en.wikipedia.org/wiki/List_of_epidemics
+https://en.wikipedia.org/wiki/History_of_smallpox#Australia
+
+Government Departments
+https://www.findandconnect.gov.au/

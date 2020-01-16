@@ -1,0 +1,45 @@
+State,Impact,BoardName,From,To
+VIC,Negative,Port Phillip Protectorate,1839,1849
+VIC,Negative,Central Board Appointed to Watch Over the Interests of Aborigines,1860,1869
+VIC,Negative,Central Board for the Protection of Aborigines,1869,1901
+VIC,Negative,"Central Board for the Protection of Aborigines, State Government of Victoria",1901,1957
+VIC,Negative,Aborigines Welfare Board,1957,1968
+VIC,Positive,Minister for Aboriginal Affairs,1968,2021
+NSW,Negative,Board for the Protection of Aborigines,1883,1940
+NSW,Negative,Aborigines Welfare Board,1940,1969
+NSW,Negative,Aborigines Welfare Directorate,1969,1975
+NSW,Positive,Ministry of Aboriginal Affairs,1982,1988
+NSW,Positive,Office of Aboriginal Affairs,1988,1995
+NSW,Positive,Department of Aboriginal Affairs,1995,2009
+NSW,Positive,Department of Human Services,2009,2011
+NSW,Positive,Aboriginal Affairs NSW,2011,2021
+WA,Negative,Western Australian Aborigines Protection Board,1886,1898
+WA,Negative,Aborigines Department,1898,1909
+WA,Negative,Department of Aboriginies and Fisheries,1909,1920
+WA,Negative,Department of the North West,1920,1926
+WA,Negative,Department of Native Affairs,1936,1955
+WA,Negative,Department of Native Welfare,1955,1972
+WA,Positive,Aboriginal Affairs Planning Authority,1972,1994
+WA,Positive,Aboriginal Affairs Department,1994,2001
+WA,Positive,Department of Indigenous Affairs,2001,2013
+WA,Positive,Department of Aboriginal Affairs,2013,2017
+WA,Positive,"Department of Planning, Lands and Heritage",2017,2021
+QLD,Negative,Protectors,1897,1904
+QLD,Negative,Chief Protector of Aboriginals Office,1904,1939
+QLD,Negative,Department of Native Affairs,1939,1965
+QLD,Negative,Queensland Department of Aboriginal and Islander Affairs,1965,1975
+QLD,Positive,Aboriginal and Islanders Advancement Department,1975,1984
+QLD,Positive,Community Services Department,1984,1987
+QLD,Positive,Community Services and Ethnic Affairs Department,1987,1989
+QLD,Positive,Family Services and Aboriginal and Islander Affairs Department,1989,1996
+QLD,Positive,Office of Aboriginal and Torres Strait Islander Policy,1996,1998
+QLD,Positive,Aboriginal and Torres Strait Islander Policy and Development Department,1998,2001
+QLD,Positive,Aboriginal and Torres Strait Islander Policy Department,2001,2006
+QLD,Positive,Aboriginal and Torres Strait Islander and Multicultural Affairs Department,2012,2021
+SA,Negative,Office of the Protector of Aborigines,1866,1912
+SA,Negative,Aborigines Department,1912,1963
+SA,Negative,Department of Aboriginal Affairs,1963,1970
+SA,Positive,Department of Social Welfare and Aboriginal Affairs,1970,1972
+SA,Positive,Department of Community Welfare,1972,1990
+NT,Negative,Chief Protector,1910,1966
+

@@ -228,7 +228,7 @@ def update_cities(frame):
         list_items.append(scat)
 
     #Aboriginal Protection Boards
-    pb_txt_locations = {'State':['VIC','NSW','WA','QLD','SA','NT'],'Longitude':[142.0,143.0,117.0,140.0,131.0,130.0],'Latitude':[-38.0,-33.0,-26.0,-25.0,-31.0,-22.0]}
+    pb_txt_locations = {'State':['VIC','NSW','WA','QLD','SA','NT'],'Longitude':[142.0,143.0,117.0,140.0,131.0,130.0],'Latitude':[-37.5,-33.0,-26.0,-25.0,-31.0,-22.0]}
     pb_locations_df = pd.DataFrame(pb_txt_locations)
     protection_boards = state_protection_boards[(current_year >= state_protection_boards.From) & (current_year < state_protection_boards.To)]
     for index, protection_board in protection_boards.iterrows():

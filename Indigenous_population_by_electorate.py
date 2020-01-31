@@ -1,6 +1,6 @@
 """Maps Indigenous population by Australian Federal electorate
 
-This product (Indigenous_populatiion_by_electorate.py) incorporates data that is:
+This product (Indigenous_population_by_electorate.py) incorporates data that is:
     © Commonwealth of Australia (Australian Electoral Commission) 2020
     © Commonwealth of Australia (Australian Bureau of Statistics) 2020
 
@@ -22,15 +22,12 @@ from mpl_toolkits.basemap import Basemap
 __author__ = "Andrew Arch"
 __copyright__ = "Copyright 2020"
 __license__ = "GPL"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __maintainer__ = "Andrew Arch"
 __email__ = "andy.arch11@gmail.com"
 __status__ = "Production"
 
 #create figure to host map.  N.B. if this is declared after Basemap, it will plot points to its own window
-#fig = plt.figure(figsize=[24, 13], constrained_layout=True)
-#ax = fig.add_subplot(121)
-#ax_colorbar = fig.add_subplot(122)
 fig, (ax,ax_colorbar) = plt.subplots(1,2, figsize=[25.5, 13], gridspec_kw = {'width_ratios':[4, 0.02]}, constrained_layout=True)
 
 #TODO refactor the capital city mappings into functions driven by datasets, and make execution more efficient, processing datasets in bulk rather than iterating over individual values
@@ -285,7 +282,7 @@ def plot_shape(id, sf, s=None):
 
 
 def plot_map(sf, pop_heatmap):
-    """ Overly long function to map the climate change deniers, requires refactoring.
+    """ Overly long function to map the heatmap, requires refactoring.
     
     Args:
         sf -- the shapefile containing the shapes of the electorates
@@ -679,12 +676,22 @@ def plot_map(sf, pop_heatmap):
     mark_geo_inset(ax, darwin_ax, m, darwin_m, loc1=(1, 2), loc2=(4, 3), fc='none', ec='0.7')
 
     norm = colors.Normalize(vmin=0, vmax=max_boundary)
-    colorbar.ColorbarBase(ax=ax_colorbar, cmap=cmap, norm=norm, alpha=alpha)
+    cbar_ticks = np.linspace(0, max_boundary, num=5)
+    if pop_heatmap == heatmap[0]:
+        cbar_ticklabels = [str(round(number=(x * 100), ndigits=1)) + '%' for x in cbar_ticks]
+    elif pop_heatmap == heatmap[1]:
+        cbar_ticklabels = [str(round(number=(x), ndigits=0)) for x in cbar_ticks]
+    elif pop_heatmap == heatmap[2]:
+        cbar_ticklabels = [str(round(number=(x), ndigits=1)) for x in cbar_ticks]
+
+    cbar = colorbar.ColorbarBase(ax=ax_colorbar, cmap=cmap, norm=norm, alpha=alpha)
+    cbar.set_ticks(ticks=cbar_ticks, update_ticks=True)
+    cbar.set_ticklabels(ticklabels=cbar_ticklabels, update_ticks=True)
     ax.set_title(pop_heatmap)
 
     #display the map
-    #plt.show()
-    plt.savefig(pop_heatmap + '.png')
+    plt.show()
+    #plt.savefig(pop_heatmap + '.png')
 
 #read the shape file
 sf = shp.Reader('./data/national-esri-fe2019/COM_ELB_region.shp')
@@ -702,5 +709,5 @@ indigenous_population = pd.read_csv('./data/Indigenous Population 2019.csv', ind
 
 #map indigenous populations to electorate, subject to the type of heatmap chosen
 heatmap = ['Indigenous Population Percentage', 'Indigenous Population', 'Indigenous Population per SqKm']
-plot_map(sf, heatmap[2])
+plot_map(sf, heatmap[0])
 

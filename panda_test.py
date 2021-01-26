@@ -7,10 +7,20 @@ population = pd.read_csv('./data/population.csv', index_col='Year')
 explorers = pd.read_csv('./data/Explorers.csv', index_col='From')
 state_boundaries = pd.read_csv('./data/States.csv', index_col='YearEffectiveFrom')
 state_protection_boards = pd.read_csv('./data/Aboriginal Protector Boards.csv')
+british_legislation = pd.read_excel('./data/Aboriginal Control Legislation.xlsx', sheet_name='British Empire', header=0, usecols=['State', 'Impact', 'From', 'To', 'Legislation Name'], dtype={'From': pd.Int32Dtype(), 'To': pd.Int32Dtype()}, keep_default_na=True)
+commonwealth_legislation = pd.read_excel('./data/Aboriginal Control Legislation.xlsx', sheet_name='Australian Commonwealth', header=0, usecols=['State', 'Impact', 'From', 'To', 'Legislation Name'], dtype={'From': pd.Int32Dtype(), 'To': pd.Int32Dtype()}, keep_default_na=True)
 
 
-current_year = 1967
+current_year = 2018
 
+print(commonwealth_legislation)
+
+active_legislation = commonwealth_legislation[((commonwealth_legislation['From'] <= current_year) & ((commonwealth_legislation['To'] > current_year) | (commonwealth_legislation['To'].isna())))]
+
+print(active_legislation)
+
+
+"""
 #pb_txt_locations = [['VIC',100,-40],['NSW',100,-40],['WA',100,-40],['QLD',100,-40],['SA',100,-40],['NT',100,-40]]
 pb_txt_locations = {'State':['VIC','NSW','WA','QLD','SA','NT'],'Longitude':[100,90,80,70,60,50],'Latitude':[-40,-35,-30,-25,-20,-15]}
 pb_locations_df = pd.DataFrame(pb_txt_locations)
@@ -32,7 +42,7 @@ for index, protection_board in protection_boards.iterrows():
     print(pb_txt_y)
     print()
 
-"""
+
 state_names = pd.read_csv('./data/' + '1859 States.csv')
 #print(state_names)
 for index, state_name in state_names.iterrows():

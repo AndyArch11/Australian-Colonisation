@@ -1,23 +1,53 @@
 YearEffectiveFrom,YearEffectiveTo,DateEffectiveFrom,GeoJsonFile,StateNameFile,Event
-1788,1824,1788-01-26,1788 States.json,1788 States.csv,"New South Wales established, inclusive of Norfolk Island and New Zealand"
-1825,1825,1825-07-16,1825 States.json,1825 States.csv,New South Wales border set at 129th meridian
+1788,1809,1787-04-25,1787 States.json,1787 States.csv,"The Colony of New South Wales was created as a penal colony by the Kingdom of Great Britain in Australia east of 135° east, 25 April, 1787. The First Fleet arrived in Sydney Cove on 26 January 1788. Word of the establishment was proclaimed in Australia by Governor Arthur Phillip on 7 February 1788. The commission included ""all the islands adjacent in the Pacific Ocean"" within the latitudes of 10°37' south and 43°39' south, which included most of New Zealand."
+1810,1824,1810-07-11,1787 States.json,1787 States.csv,"Macquarie Island was discovered by Frederick Hasselborough, who claimed it for the United Kingdom and declared it part of New South Wales"
+1825,1825,1825-07-16,1825 States.json,1825 States.csv,"New South Wales border set at 129th meridian, and the borders of the ""islands adjacent in the Pacific Ocean"" were moved north to 39°12' south, now including only a small part of New Zealand."
 1826,1828,1825-12-03,1825 States.json,1826 States.csv,Van Diemen's Land proclaimed a separate colony
-1829,1831,1829-06-18,1825 States.json,1829 States.csv,Swan River Colony proclaimed
-1832,1836,1832,1825 States.json,1832 States.csv,Swan River Colony changed its name to Western Australia
-1837,1839,1836-12-28,1837 States.json,1836 States.csv,Province of South Australia proclaimed
-1840,1845,1840-11-16,1837 States.json,1836 States.csv,New Zealand constituted as a separate colony
+1829,1831,1829-05-02,1825 States.json,1829 States.csv,Swan River Colony founded
+1832,1835,1832-02-06,1825 States.json,1832 States.csv,Swan River Colony changed its name to Western Australia
+1836,1838,1836-12-28,1836 States.json,1836 States.csv,Province of South Australia proclaimed
+1839,1839,1839-06-15,1839 States.json,1839 States.csv,New South Wales annexed the islands of New Zealand. The action was proclaimed on 14 January 1840.
+1840,1843,1840-11-16,1839 States.json,1840 States.csv,New Zealand declared a sovereign state by Britian in 1840 and constituted as a separate colony 3 May 1841
+1844,1845,1844-09-26,1839 States.json,1840 States.csv,Norfolk Island was transferred from New South Wales to Van Diemen's Land
 1846,1846,1846-02-17,1846 States.json,1846 States.csv,Colony of North Australia proclaimed
-1847,1850,1846-11-28,1837 States.json,1836 States.csv,Colony of North Australia revoked by Queen Victoria
+1847,1850,1847-12-28,1839 States.json,1840 States.csv,"Colony of North Australia revoked by Queen Victoria, however, it was not proclaimed in Australia until 16 January 1849"
 1851,1855,1851-07-01,1851 States.json,1851 States.csv,Colony of Victoria founded
 1856,1858,1856-01-01,1851 States.json,1856 States.csv,Van Diemen's Land name changed to Tasmania
-1859,1859,1859-06-06,1859 States.json,1859 States.csv,Queensland authorised as a separate colony
-1860,1861,1860,1860 States.json,1860 States.csv,South Australian border changed from 132nd meridian to 129th meridian
-1862,1862,1862-04-12,1862 States.json,1862 States.csv,Queensland border moved to 138th meridian
-1863,1900,1863-07-06,1863 States.json,1863 States.csv,Northern Territory annexed to South Australia
-1901,1910,1901-01-01,1863 States.json,1863 States.csv,Commonwealth of Australia proclaimed
-1911,1914,1911-01-01,1911 States.json,1911 States.csv,Federal Capital Territory established. Northern Territory transferred to Commonwealth control
-1915,1926,1915-07-12,1915 States.json,1915 States.csv,Jervis Bay Territory added to Federal Capital Territory
-1927,1930,1927-02-01,1927 States.json,1927 States.csv,Northern Territory divided into North Australia and Central Australia
-1931,1937,1931-06-12,1915 States.json,1915 States.csv,North Australia and Central Australia merge into the Northern Territory
-1938,1988,1938-07-29,1915 States.json,1938 States.csv,Federal Capital Territory renamed to Australian Capital Territory
-1989,2020,1989-05-11,1915 States.json,1989 States.csv,Jervis Bay becomes separate Commonwealth territory
+1859,1860,1859-06-06,1859 States.json,1859 States.csv,Queensland authorised as a separate colony
+1861,1861,1861-10-10,1861 States.json,1861 States.csv,South Australian border changed from 132nd meridian to 129th meridian
+1862,1862,1862-03-13,1862 States.json,1862 States.csv,Queensland border moved to 138th meridian
+1863,1871,1863-07-06,1863 States.json,1863 States.csv,New South Wales territory north of South Australia annexed to South Australia
+1872,1878,1872-05-30,1863 States.json,1863 States.csv,All islands within 60 miles (97 km) of Queensland were annexed by the colony of Queensland.
+1879,1879,1879-07-21,1863 States.json,1863 States.csv,The Torres Strait Islands were specifically annexed by Queensland
+1880,1882,1880-06-17,1863 States.json,1863 States.csv,Macquarie Island was transferred from New South Wales to Tasmania
+1883,1883,1883-04-04,1863 States.json,1883 States.csv,Queensland claims southeast New Guinea (which the British Government rejected)
+1884,1900,1884-11-06,1863 States.json,1884 States.csv,British Empire declares New Guinea as a protectorate but Queensland retains administration
+1901,1905,1/01/1901,1863 States.json,1884 States.csv,"Commonwealth of Australia proclaimed, Parliament met in Melbourne until the capital could be built."
+1906,1910,1/09/1906,1863 States.json,1906 States.csv,British New Guinea transferred from the UK becoming Territory of Papua
+1911,1913,1/01/1911,1911 States.json,1911 States.csv,Federal Capital Territory established. Northern Territory transferred to Commonwealth control
+1914,1914,1/07/1914,1911 States.json,1911 States.csv,"Norfolk Island transferred from the United Kingdom, becoming the Territory of Norfolk Island"
+1915,1919,4/09/1915,1915 States.json,1915 States.csv,Jervis Bay Territory added to Federal Capital Territory
+1920,1926,17/12/1920,1915 States.json,1920 States.csv,"League of Nations transfers the former German New Guinea to Australia as the Territory of New Guinea and the Mandate of Nauru to Australia, New Zealand, and the UK as co-trustees"
+1927,1930,1/02/1927,1927 States.json,1927 States.csv,"Northern Territory divided into North Australia and Central Australia. Parliament began sitting in Canberra, moving the capital from Melbourne"
+1931,1933,12/06/1931,1915 States.json,1920 States.csv,North Australia and Central Australia merge into the Northern Territory
+1934,1935,10/05/1934,1915 States.json,1920 States.csv,"The Ashmore and Cartier Islands transferred from the United Kingdom, becoming the Territory of Ashmore and Cartier Islands."
+1936,1937,24/08/1936,1915 States.json,1920 States.csv,"The United Kingdom transferred the portion of its claim to Antarctica between 45° east and 136° east, and 142° east and 160° east, to Australia, where it became the Australian Antarctic Territory."
+1938,1941,29/07/1938,1915 States.json,1938 States.csv,Federal Capital Territory renamed to Australian Capital Territory. The Territory of Ashmore and Cartier Islands was annexed to the Northern Territory
+1942,1944,26/08/1942,1915 States.json,1938 States.csv,The Mandate of Nauru was captured by Japan
+1945,1945,14/09/1945,1915 States.json,1938 States.csv,The Japanese garrison in the Mandate of Nauru surrended
+1946,1946,13/12/1946,1915 States.json,1938 States.csv,The Territory of New Guinea was reconstituted as a United Nations trust territory
+1947,1948,26/12/1947,1915 States.json,1938 States.csv,"Heard Island and McDonald Islands transferred from the United Kingdom. The receipt was confirmed in letters exchanged 19 December 1950. Also, on 1 November 1947 the Mandate of Nauru was reconstituted as the UN Trust Territory of Nauru"
+1949,1952,1/07/1949,1915 States.json,1949 States.csv,Territory of New Guinea and Territory of Papua merged into Territory of Papua and New Guinea
+1953,1954,24/04/1953,1915 States.json,1949 States.csv,Heard Island and McDonald Islands declared the Territory of Heard Island and McDonald Islands
+1955,1957,23/11/1955,1915 States.json,1949 States.csv,"The Cocos (Keeling) Islands transferred by the UK from the Colony of Singapore, becoming the Territory of the Cocos (Keeling) Islands"
+1958,1967,1/10/1958,1915 States.json,1949 States.csv,"Christmas Island transferred by the UK from the Colony of Singapore, becoming the Territory of Christmas Island"
+1968,1968,31/01/1968,1915 States.json,1949 States.csv,The Trust Territory of Nauru becomes independent as the Republic of Nauru
+1969,1970,30/09/1969,1915 States.json,1949 States.csv,The Coral Sea Islands Territory created from Queensland
+1971,1972,27/12/1971,1915 States.json,1971 States.csv,Territory of Papua and New Guinea renamed Papua New Guinea would become independent 1975-09-16
+1973,1974,31/12/1973,1915 States.json,1973 States.csv,Jervis Bay formally named Jervis Bay Territory to become its own territory 1989-05-11
+1975,1977,16/09/1975,1915 States.json,1973 States.csv,"Papua New Guinea became independent as the Independent State of Papua New Guinea, rendering a dispute of the Republic of the North Solomons declaring the indepdence of the region surrounding Bouganville Island earlier that year moot."
+1978,1985,1/07/1978,1915 States.json,1973 States.csv,The Ashmore and Cartier Islands split from the Northern Territory and becomes the Territory of Ashmore and Cartier Islands
+1986,1988,3/03/1986,1915 States.json,1973 States.csv,"The Australia Act 1986 made Australia independent of the United Kingdom, other than still being a monarchy with the crown still the titular head."
+1989,1996,11/05/1989,1915 States.json,1973 States.csv,Jervis Bay Territory split from the Australian Capital Territory to become its own territory
+1997,2021,7/07/1997,1915 States.json,1973 States.csv,Elizabeth Reef and Middleton Reef transferred from New South Wales to the Coral Sea Islands Territory
+2022,2025,,1915 States.json,1973 States.csv,A change of border encompassing 330 hectares between ACT and NSW was proposed.

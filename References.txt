@@ -14,7 +14,6 @@ Population Stats
 https://www.abs.gov.au/AUSSTATS/abs@.nsf/Lookup/3105.0.65.001Main+Features12016?OpenDocument
 https://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/3105.0.65.0012016?OpenDocument
 
-
 Missions
 http://oa.anu.edu.au/entity/14540?eid=14581
 https://en.wikipedia.org/wiki/Category:Australian_Aboriginal_missions
@@ -36,3 +35,29 @@ https://en.wikipedia.org/wiki/History_of_smallpox#Australia
 
 Government Departments
 https://www.findandconnect.gov.au/
+
+Colonial Massacre Sites in Australia (http://creativecommons.org/licenses/by-nc/4.0)
+https://c21ch.newcastle.edu.au/colonialmassacres/
+https://dataverse.ada.edu.au/dataset.xhtml?persistentId=doi:10.26193/L0WEID
+
+Railway Lines of Australia
+https://digital.atlas.gov.au/datasets/9dd0b398e56d4306b03b89050433febf_0/explore?location=-25.814444%2C137.082918%2C5.56
+
+Missions
+https://aiatsis.gov.au/family-history/family-history-sources/official-records/mission-and-reserve-records
+https://www.findandconnect.gov.au
+
+Legislation
+https://www.austlii.edu.au/au/other/IndigLRes/timeline/toc.html
+https://www.legislation.gov.au/
+https://legislation.nsw.gov.au/
+https://legislation.wa.gov.au/
+https://www.legislation.tas.gov.au/
+https://www.legislation.sa.gov.au/
+https://www.legislation.vic.gov.au/
+https://www.legislation.qld.gov.au/
+https://legislation.nt.gov.au/
+https://legislation.act.gov.au/
+
+Deaths in Custody
+https://www.aic.gov.au/publications/sr/sr49

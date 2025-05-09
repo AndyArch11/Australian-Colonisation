@@ -2,4 +2,6 @@ The animation is created using Python's matplotlib libraries.
 
 The code and source software is provided subject to GNU GPL 3.0.
 
-The mapping used is intended only to convey general concepts and is not accurate enough to use in other contexts.  Happy to be incorporate more accurate mappings if made available.
+The mapping used is intended only to convey general concepts and is not accurate enough to use in other contexts.  Happy to be incorporate more accurate mappings and datapoints if made available.
+
+If running the code, need to extract the geojson file from "Railway_Lines_vw_-3300151204749464250.7z" first. The raw file is too large for github.

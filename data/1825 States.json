@@ -65,6 +65,40 @@
           ]
         ]
       }
-    }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name": "New South Wales claim of New Zealand"},
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            173.78979,
+            -39.2
+          ],
+          [
+            177.04003,
+            -39.2
+          ]
+		]
+	  }
+	},
+    {
+      "type": "Feature",
+      "properties": {"name": "New South Wales claim of New Zealand"},
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            177.84737,
+            -39.2
+          ],
+          [
+            177.91879,
+            -39.2
+          ]
+		]
+	  }
+	}
   ]
 }

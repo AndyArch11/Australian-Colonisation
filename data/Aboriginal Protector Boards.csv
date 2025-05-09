@@ -28,7 +28,7 @@ QLD,Negative,Protectors,1897,1904
 QLD,Negative,Chief Protector of Aboriginals Office,1904,1939
 QLD,Negative,Department of Native Affairs,1939,1965
 QLD,Negative,Queensland Department of Aboriginal and Islander Affairs,1965,1975
-QLD,Positive,Aboriginal and Islanders Advancement Department,1975,1984
+QLD,Negative,Aboriginal and Islanders Advancement Department,1975,1984
 QLD,Positive,Community Services Department,1984,1987
 QLD,Positive,Community Services and Ethnic Affairs Department,1987,1989
 QLD,Positive,Family Services and Aboriginal and Islander Affairs Department,1989,1996
@@ -42,4 +42,3 @@ SA,Negative,Department of Aboriginal Affairs,1963,1970
 SA,Positive,Department of Social Welfare and Aboriginal Affairs,1970,1972
 SA,Positive,Department of Community Welfare,1972,1990
 NT,Negative,Chief Protector,1910,1966
-

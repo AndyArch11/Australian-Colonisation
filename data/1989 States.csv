@@ -1,10 +1,24 @@
-StateName,Longitude,Latitude
-Western Australia,117,-24
-New South Wales,143,-30
-Northern Territory,130,-16
-Tasmania,145.5,-42
-South Australia,130,-27
-Victoria,142,-36.5
-Queensland,140,-21
-Australian Capital Territory,150.5,-35.7
-Jervis Bay Territory,151,-35
+Mapping,StateName,Longitude,Latitude
+Legislation,Western Australia,116,-22.5
+Legislation,New South Wales,141.5,-29.5
+Legislation,Northern Territory,129.5,-15.5
+Legislation,Tasmania,145.5,-41.4
+Legislation,South Australia,129.5,-27
+Legislation,Victoria,141.5,-35.1
+Legislation,Queensland,140,-20
+Legislation,Australian Capital Territory,150.6,-35.7
+Legislation,Jervis Bay Territory,151,-35
+Colonisation,Western Australia,121,-25
+Colonisation,New South Wales,143,-31.8
+Colonisation,Northern Territory,131.7,-18.75
+Colonisation,Tasmania,145.5,-42
+Colonisation,South Australia,130.6,-28.6
+Colonisation,Victoria,146.5,-37.15
+Colonisation,Queensland,143.5,-25.5
+Colonisation,Australian Capital Territory,150.6,-35.7
+Colonisation,Jervis Bay Territory,151.2,-35
+Colonisation,Papua New Guinea,140.6,-8.7
+Colonisation,New Zealand,168,-44.6
+
+
+

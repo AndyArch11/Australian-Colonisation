@@ -1,1 +1,4 @@
-data/~$Aboriginal Control Legislation.xlsx
+#ignore Microsoft Office temp files
+~$*
+#ignore the railway file as too large for github
+Railway_Lines*.geojson

@@ -1,8 +1,16 @@
-StateName,Longitude,Latitude
-Western Australia,117,-24
-New South Wales,143,-30
-New South Wales,130,-16
-Tasmania,145.5,-42
-South Australia,133,-27
-Victoria,142,-36.5
-Queensland,142,-21
+Mapping,StateName,Longitude,Latitude
+Legislation,Western Australia,116,-22.5
+Legislation,New South Wales,141.5,-29.5
+Legislation,New South Wales,130,-16
+Legislation,Tasmania,145.5,-41.4
+Legislation,South Australia,129.5,-27
+Legislation,Victoria,141.5,-35.1
+Legislation,Queensland,140,-20
+Colonisation,Western Australia,121,-25
+Colonisation,New South Wales,143,-31.8
+Colonisation,New South Wales,131.7,-18.75
+Colonisation,Tasmania,145.5,-42
+Colonisation,South Australia,133,-28.6
+Colonisation,Victoria,146.5,-37.15
+Colonisation,Queensland,143.5,-25.5
+Colonisation,New Zealand,168,-44.6

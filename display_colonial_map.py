@@ -33,7 +33,8 @@ display_state_boundaries = True
 loop_display = False
 
 display_colonisation = True
-display_blak_history = False
+display_blak_history = True
+display_white_blak_hx_back_to_back = False #ignores display_blak_history, as runs both scenarios back to back
 display_explorers = True
 display_explorers = display_colonisation and display_explorers
 display_towns = True
@@ -77,6 +78,8 @@ mission_zorder = 6
 railway_zorder = 7
 scrolling_text_zorder = 8
 
+number_repeat_frames_at_start_and_end = 1
+
 # https://www.captaincooksociety.com/home/detail/the-first-voyage-1768-1771
 # Captain Cook left Plymouth Aug 1768
 # Arrived at Rio de Janeiro Nov 1768
@@ -85,11 +88,11 @@ scrolling_text_zorder = 8
 # Arrived at New Zealand Oct 1769.  Kills "natives"
 # Arrived at Australia April 1770, first sighting Point Hicks (Cape Everard) in Victoria 19th April 1770, 
 # sailing north to Possession Island in the Torres Strait, stopping at Botany Bay and Cooktown
-colonial_epoch = 1768 
+colonial_epoch = 1766 #1768
 final_anime_year = 2020
 #override values
-#colonial_epoch = 2010
-#final_anime_year = 2020
+#colonial_epoch = 1850
+#final_anime_year = 1868
 
 previous_year_indigenous_population = 750000
 previous_year_non_indigenous_population = 0
@@ -103,10 +106,12 @@ anime_interval = 500 #ms, time between animation frames
 
 image_title = ''
 if display_colonisation:
-    if display_blak_history:
-        image_title = 'Colonisation of Australia'
+    if display_white_blak_hx_back_to_back:
+        image_title = 'A White and Blak telling of the Colonisation of Australia'
+    elif display_blak_history:
+        image_title = 'Colonisation of Australia - a Blak History'
     else:
-        image_title = 'A White History of Australia'
+        image_title = 'The White History of Australia'
 elif display_legal_controls:
     image_title = 'Legislative Control of Australian First Nations'
 
@@ -175,7 +180,7 @@ town_scatter = ax.scatter([], [], s=20, c="#e1910a", zorder=town_zorder)
 unknown_town_est_year_scatter = ax.scatter([], [], s=20, c="#e1910a", zorder=town_zorder)
 closed_mission_scatter = ax.scatter([], [], s=10, c="lightblue", marker='D', zorder=mission_zorder)
 open_mission_scatter = ax.scatter([], [], s=15, c="blue", marker='D', zorder=mission_zorder)
-massacre_scatter = ax.scatter([], [], s=20, c="#cf210a", alpha=0.6, zorder=massacre_zorder)
+massacre_scatter = ax.scatter([], [], s=20, facecolors="#cf210a", edgecolors="#cf210a", alpha=0.35, zorder=massacre_zorder)
 
 #initialise text
 acknowledgment_text = ax.text(115.0, -26.0, '', horizontalalignment='left', color='0.1', alpha=0, fontsize=10)
@@ -205,11 +210,11 @@ if display_australian_conflict:
     for i in range(number_conflict_lines):
         reference_conflicts.append(ax.text(106, -9, '', horizontalalignment='left', color='0.1', fontsize=7, zorder=scrolling_text_zorder))    
 
-number_defining_moment_lines_to_display = 80 # number of text references need to be more than number we want to display due to wordwrap exploding number count
+number_defining_moment_lines_to_display = 98 # number of text references need to be more than number we want to display due to wordwrap exploding number count
 reference_defining_moments = []
 if display_defining_moments:
-    for i in range(int(number_defining_moment_lines_to_display * 1.5)):
-        reference_defining_moments.append(ax.text(153, 11, '', horizontalalignment='left', color='0.1', fontsize=7, zorder=scrolling_text_zorder))
+    for i in range(int(number_defining_moment_lines_to_display * 1.7)):
+        reference_defining_moments.append(ax.text(153, -11, '', horizontalalignment='left', color='0.1', fontsize=7, zorder=scrolling_text_zorder))
 
 number_massacre_lines_to_display = 95
 reference_massacre_lines = []
@@ -261,10 +266,48 @@ if display_railway_lines:
         reference_railway_segments.append(line_plot)
 
 def init():   
+    """
+        Initialisation function to set up the first frame of the animation
+
+    """
     global list_items
     return list_items
 
-def init_file_load(display_state_boundaries):
+def init_file_load(display_state_boundaries=False, display_first_nations_milestones=False, display_australian_conflict=False):
+    """
+        Loads files into memory on start 
+
+        Parameters
+        ----------
+        (Optional) display_state_boundaries
+            boolean: whether to load the 'States.csv' file
+
+        (Optional) display_first_nations_milestone
+            boolean: whether to load the 'First Nations milestones.csv' file
+
+        (Optional) display_australian_conflict
+            boolean: whether to load the 'Australia in Conflict.csv' file
+        
+        Returns
+        -------
+        population
+            Panda DataFrame: containing the contents of the 'population.csv' file, 
+                indexed on the 'Year' column
+
+        state_boundaries
+            Panda DataFrame: containing the contents of the 'States.csv' file, 
+                indexed on the 'YearEffectiveFrom' column
+
+        first_nations_milestones
+            Panda DataFrame: containing the contents of the 'First Nations milestones.csv' file 
+                not indexed
+
+        australian_conflicts
+            Panda DataFrame: containing the contents of the 'Australia in Conflict.csv' file
+                not indexed
+                'Current' value in the 'To' field replaced with the 'final_anime_year' value
+    """
+
     #Year [0], Indigenous Population [1], Colonial Population [2], Total Population [3], Indigenous percentage [4], Indigenous Percentage drop from Baseline [5]
     population = pd.read_csv('./data/population.csv', index_col='Year')
     state_boundaries = pd.DataFrame()
@@ -287,7 +330,87 @@ def init_file_load(display_state_boundaries):
 
     return population, state_boundaries, first_nations_milestones, australian_conflicts
 
-def init_colonial_file_load(display_explorers, display_towns, display_undated_towns, display_railway_lines, display_massacre_sites, display_missions, display_deaths_in_custody, display_incarceration_rates, display_defining_moments): 
+def init_colonial_file_load(display_explorers=False, display_towns=False, display_undated_towns=False, display_railway_lines=False, display_massacre_sites=False, \
+                            display_missions=False, display_deaths_in_custody=False, display_incarceration_rates=False, display_defining_moments=False): 
+    """
+        Loads files into memory that relate to the colonisation mapping
+
+        Parameters
+        ----------
+        (Optional) display_explorers
+            boolean: whether to load the 'Explorers.csv' file
+
+        (Optional) display_towns
+            boolean: whether to load the 'city_list.csv' file
+
+        (Optional) display_undated_towns
+            boolean: whether to load the 'undated_city_list.csv' file
+
+         (Optional) display_railway_lines
+            boolean: whether to load the 'Railway_Lines_vw_-3300151204749464250.geojson' and 'operating_dates_of_australian_railway_lines.csv' files
+
+        (Optional) display_massacre_sites
+            boolean: whether to load the 'ColonialMassacresInAustralia_Data.json' file
+
+        (Optional) display_missions
+            boolean: whether to load the 'Aboriginal and Torres Strait Islander Missions and Reserves.csv' file
+
+        (Optional) display_deaths_in_custody
+            boolean: whether to load the 'Deaths in Custody.csv' file
+
+        (Optional) display_incarceration_rates
+            boolean: whether to load the 'Prisoner characteristics, Australia (Tables 1 to 13) 1997 - 2013.xlsx' and 'Prisoner characteristics, Australia (Tables 1 to 13) 2014 - 2024.xlsx' files
+
+        (Optional) display_defining_moments
+            boolean: whether to load the 'Australian defining moments.csv' file
+
+        Returns
+        -------
+        explorers
+            Panda DataFrame: containing the contents of the 'Explorers.csv' file
+                indexed on the 'From' column
+
+        cities
+            Panda DataFrame: containing the contents of the 'city_list.csv' file
+                indexed on the 9th column 'established date (city page)'
+
+        undated_cities
+            Panda DataFrame: containing the contents of the 'undated_city_list.csv' file
+                not indexed
+
+        railways
+            Panda DataFrame: containing the normalised contents of the 'Railway_Lines_vw_-3300151204749464250.geojson' file
+                indexed on the 'properties.name' attribute
+
+        railway_operating_dates
+            Panda DataFrame: containing the contents of the 'operating_dates_of_australian_railway_lines.csv' file
+                not indexed
+
+        massacres
+            Panda DataFrame: containing the normalised contents of the 'ColonialMassacresInAustralia_Data.json' file
+                indexed on the derived 'yearofmassacre' column, generated from the 'properties.datestart' attribute
+
+        missions
+            Panda DataFrame: containing the contents of the 'Aboriginal and Torres Strait Islander Missions and Reserves.csv' file
+                not indexed
+                'Lat' and 'Lon' columns converted to decimal geocoordinates
+                'current' value in the 'To' field replaced with the 'final_anime_year' value
+
+        deaths_in_custody
+            Panda DataFrame: containing the contents of the 'Deaths in Custody.csv' file
+                'StartReportingYear' column and 'EndReportingYear' columns derived from the 'Year'
+                indexed on the derived 'StartReportingYear' column
+
+        incarceration_rates
+            Panda DataFrame: containing the merged contents of the 'Table 2' worksheets from the 'Prisoner characteristics, Australia (Tables 1 to 13) 1997 - 2013.xlsx' and 'Prisoner characteristics, Australia (Tables 1 to 13) 2014 - 2024.xlsx' files
+                indexed on 'Reference period' column 0
+                derived 'Percentage' column, based on 'Aboriginal and Torres Strait Islander' / 'Aboriginal and Torres Strait Islander' + 'Non-Indigenous' columns
+        
+        defining_moments
+            Panda DataFrame: containing the contents of the 'Australian defining moments.csv' file
+                not indexed
+
+    """
     explorers = pd.DataFrame()
     cities = pd.DataFrame()
     undated_cities = pd.DataFrame()
@@ -367,6 +490,21 @@ def init_colonial_file_load(display_explorers, display_towns, display_undated_to
     return explorers, cities, undated_cities, railways, railway_operating_dates, massacres, missions, deaths_in_custody, incarceration_rates, defining_moments
 
 def dms2dec(dms_str):
+    """
+        Converts degree/minute/second values to decimal values
+
+        Parameters
+        ----------
+        dms_str
+            String: degree/minute/second formatted values
+
+        Returns
+        -------
+        dec_value
+            Converted decimal value
+                empty string if dms_str is NA, otherwise returns a float
+    """
+
     dec_value = ''
 
     if pd.isna(dms_str):
@@ -397,6 +535,56 @@ def dms2dec(dms_str):
     return dec_value
 
 def init_legal_file_load():
+    """
+        Loads the legal data from files into memory
+       
+        Returns
+        -------
+        state_protection_boards
+            Panda DataFrame: containing the contents of the 'Aboriginal Protector Boards.csv' file
+                not indexed
+        
+        british_legislation
+            Panda DataFrame: containing the contents of the worksheet 'British Empire' from the 'Aboriginal Protector Boards.csv' file
+                not indexed
+        
+        commonwealth_legislation
+            Panda DataFrame: containing the contents of the worksheet 'Australian Commonwealth' from the 'Aboriginal Protector Boards.csv' file
+                not indexed
+
+        act_legislation
+            Panda DataFrame: containing the contents of the worksheet 'Australian Capital Territory' from the 'Aboriginal Protector Boards.csv' file
+                not indexed   
+        
+        qld_legislation
+            Panda DataFrame: containing the contents of the worksheet 'Queensland' from the 'Aboriginal Protector Boards.csv' file
+                not indexed         
+        
+        wa_legislation
+            Panda DataFrame: containing the contents of the worksheet 'Western Australia' from the 'Aboriginal Protector Boards.csv' file
+                not indexed 
+        
+        sa_legislation
+            Panda DataFrame: containing the contents of the worksheet 'South Australia' from the 'Aboriginal Protector Boards.csv' file
+                not indexed
+        
+        nsw_legislation
+            Panda DataFrame: containing the contents of the worksheet 'New South Wales' from the 'Aboriginal Protector Boards.csv' file
+                not indexed        
+        
+        nt_legislation
+            Panda DataFrame: containing the contents of the worksheet 'Northern Territory' from the 'Aboriginal Protector Boards.csv' file
+                not indexed
+                
+        tas_legislation
+            Panda DataFrame: containing the contents of the worksheet 'Tasmania' from the 'Aboriginal Protector Boards.csv' file
+                not indexed
+        
+        vic_legislation
+            Panda DataFrame: containing the contents of the worksheet 'Victoria' from the 'Aboriginal Protector Boards.csv' file
+                not indexed
+    """
+
     #State [0], Impact [1], BoardName [2], From [3], To [4]
     state_protection_boards = pd.read_csv('./data/Aboriginal Protector Boards.csv')
     #Worksheets: British Empire, Australian Commonwealth, Australian Capital Territory, Queensland, Western Australia, South Australia, New South Wales, Northern Territory, Tasmania, Victoria
@@ -419,15 +607,73 @@ def init_legal_file_load():
 
 
 def update_year(frame): 
-    global list_items
+    """
+        Constructs the indexed animation frame
+
+        Parameters
+        ----------
+        frame
+            Integer: frame index
+
+        Returns
+        -------
+        list_items
+           List containing MatplotLib ax objects to be drawn for this animation frame
+    """
+    global list_items, reference_railway_segments, town_scatter, unknown_town_est_year_scatter, closed_mission_scatter, open_mission_scatter, massacre_scatter
+    global display_blak_history, display_missions, display_massacre_sites, display_massacre_text, display_deaths_in_custody, display_incarceration_rates, display_first_nations_milestones
     global pop_perc_backing_rectangle, pop_perc_bar
     global previous_year_indigenous_population, previous_year_non_indigenous_population
     global acknowledgment_text, est_current_indig_pop_text, est_current_indig_pop_value_text, est_delta_indig_pop_text, est_delta_indig_pop_value_text, est_current_nonindig_pop_text, \
         est_current_nonindig_pop_value_text, est_delta_nonindig_pop_text, est_delta_nonindig_pop_value_text, indig_pop_perc_text, indig_incarc_pop_perc_text, year_text
     
+    if not display_white_blak_hx_back_to_back:
+        reference_frame = frame
+    elif display_white_blak_hx_back_to_back and frame < (timelapse_period + (number_repeat_frames_at_start_and_end * 2)):
+        reference_frame = frame
+        display_blak_history = False
+        temp_display_blak_history = display_blak_history
+        display_blak_history = False
+        temp_display_missions = display_missions
+        display_missions = False
+        temp_display_massacre_sites = display_massacre_sites
+        display_massacre_sites = False
+        temp_display_massacre_text = display_massacre_text
+        display_massacre_text = False
+        temp_display_deaths_in_custody = display_deaths_in_custody
+        display_deaths_in_custody = False
+        temp_display_incarceration_rates = display_incarceration_rates
+        display_incarceration_rates = False
+        temp_display_first_nations_milestones = display_first_nations_milestones
+        display_first_nations_milestones = False
+    else:
+        reference_frame = frame - timelapse_period - (number_repeat_frames_at_start_and_end * 2)
+        for ax in reference_railway_segments:
+            ax.set_data([], [])
 
-    current_frame = frame % (timelapse_period)
-    current_year = colonial_epoch + current_frame
+        #Unfortunately you can't set an empty scatter artist by calling set_offsets() with ([[]]) or ([],[])
+        #so resetting the scatter artists with a masked array
+        empty_offset = np.ma.masked_array([0,0], mask=True)
+        town_scatter.set_offsets(empty_offset)
+        unknown_town_est_year_scatter.set_offsets(empty_offset)
+        closed_mission_scatter.set_offsets(empty_offset)
+        open_mission_scatter.set_offsets(empty_offset)
+
+        massacre_scatter.set_offsets(empty_offset)
+        massacre_scatter.set_sizes([])
+        massacre_scatter.set_facecolors([])
+        massacre_scatter.set_edgecolors([]) 
+
+        display_blak_history = True
+        
+    current_frame = reference_frame % (timelapse_period + (number_repeat_frames_at_start_and_end * 2))
+    if current_frame <= number_repeat_frames_at_start_and_end:
+        current_year = colonial_epoch
+    elif current_frame >= timelapse_period + number_repeat_frames_at_start_and_end:
+        current_year = colonial_epoch + timelapse_period - 1
+    else:
+        current_year = colonial_epoch + current_frame - number_repeat_frames_at_start_and_end
+
     pop_year = population.loc[current_year:current_year]
     pop_percentage = pop_year['Indigenous percentage'].values[0]
     pop_percentage_value = (float(pop_percentage.rstrip('%')))/100
@@ -639,7 +885,6 @@ def update_year(frame):
             prison_perc_bar.set_alpha(0)
             list_items.append(prison_perc_bar)
 
-
     # Current Year
     year_text.set_text('Year: ' + str(current_year))
     year_text.set_color('blue')
@@ -658,6 +903,15 @@ def update_year(frame):
 
     if display_deaths_in_custody:
         add_deaths_in_custody(current_year, list_items)
+
+    if display_white_blak_hx_back_to_back and frame < (timelapse_period + (number_repeat_frames_at_start_and_end * 2)):
+        display_blak_history = temp_display_blak_history
+        display_missions = temp_display_missions
+        display_massacre_sites = temp_display_massacre_sites
+        display_massacre_text = temp_display_massacre_text
+        display_deaths_in_custody = temp_display_deaths_in_custody
+        display_incarceration_rates = temp_display_incarceration_rates
+        display_first_nations_milestones = temp_display_first_nations_milestones
     
     print(datetime.datetime.now())
     print('')
@@ -665,6 +919,17 @@ def update_year(frame):
     return list_items
 
 def add_first_nations_milestones(current_year, list_items):
+    """
+        Constructs a matrix of dates where some significant milestones are met
+
+        Parameters
+        ----------
+        current_year
+            integer: current year to display
+            
+        list_items
+            list: MatplotLib ax objects to be drawn for this animation frame
+    """
     global reference_milestones
 
     init_x = 120.1
@@ -753,7 +1018,18 @@ def add_first_nations_milestones(current_year, list_items):
                             #list_items.append(event_txt)     
                 counted_row += 1    
 
-def add_australian_conflicts(current_year, list_items):    
+def add_australian_conflicts(current_year, list_items):
+    """
+        Lists conflicts Australia has been involved in
+
+        Parameters
+        ----------
+        current_year
+            integer: current year to display
+            
+        list_items
+            list: MatplotLib ax objects to be drawn for this animation frame
+    """
     global reference_conflicts
 
     # clean up residual from previous year to avoid ghosting in generating movie
@@ -842,6 +1118,25 @@ def add_australian_conflicts(current_year, list_items):
                 counted_row += 1
 
 def conflict_str(conflict, active, current_year):
+    """
+        Creates the string to display for the individual conflict
+
+        Parameters
+        ----------
+        conflict
+            conflict row to be formatted
+
+        active
+            boolean: whether the conflict is active in the current year or not
+
+        current_year
+            integer: current year to include in formatted text
+
+        Returns
+        -------
+        conflict_text
+            String: formatted text of conflict
+    """
     conflict_col = 1
     parent_conflict_col = 2
     from_col = 4
@@ -861,7 +1156,18 @@ def conflict_str(conflict, active, current_year):
     
     return conflict_text
      
-def add_australian_defining_moments(current_year, list_items):    
+def add_australian_defining_moments(current_year, list_items):
+    """
+        Lists defining moments in Australia's history
+
+        Parameters
+        ----------
+        current_year
+            integer: current year to display
+            
+        list_items
+            list: MatplotLib ax objects to be drawn for this animation frame
+    """  
     global reference_defining_moments
     global number_defining_moment_lines_to_display
 
@@ -874,7 +1180,7 @@ def add_australian_defining_moments(current_year, list_items):
     if display_blak_history:
         init_x = 153.8
     else:
-        init_x = 155.2
+        init_x = 156.2
 
     init_y = -11.25
     row_offset = 0.34
@@ -953,17 +1259,33 @@ def add_australian_defining_moments(current_year, list_items):
                     #past_moments_with_wrapped_lines.append(ax.text(init_x, init_y - (counted_row * row_offset), line, horizontalalignment='left', color='0.3', fontsize=txt_fontsize, alpha=moment_alpha))
                     counted_row += 1
 
-            if len(active_moments_with_wrapped_lines) + len(past_moments_with_wrapped_lines) > number_defining_moment_lines_to_display:
-                past_moments_with_wrapped_lines = past_moments_with_wrapped_lines[:(number_defining_moment_lines_to_display - len(active_moments_with_wrapped_lines))]
-            
-            for wrapped_line in active_moments_with_wrapped_lines:
-                list_items.append(wrapped_line)
+        if len(active_moments_with_wrapped_lines) + len(past_moments_with_wrapped_lines) > number_defining_moment_lines_to_display:
+            past_moments_with_wrapped_lines = past_moments_with_wrapped_lines[:(number_defining_moment_lines_to_display - len(active_moments_with_wrapped_lines))]
+        
+        for wrapped_line in active_moments_with_wrapped_lines:
+            list_items.append(wrapped_line)
 
-            for wrapped_line in past_moments_with_wrapped_lines:  
-                list_items.append(wrapped_line)        
+        for wrapped_line in past_moments_with_wrapped_lines:  
+            list_items.append(wrapped_line)
+
+        # clean up extraneous ax entries so doesn't effect generated movies
+        if counted_row + 1 > number_defining_moment_lines_to_display:
+            for i in range(number_defining_moment_lines_to_display, counted_row):
+                reference_defining_moments[i].set_text("")
 
 
 def map_state_boundaries(current_year, list_items):
+    """
+        Maps the states and territories for the current year
+
+        Parameters
+        ----------
+        current_year
+            integer: current year to display
+            
+        list_items
+            list: MatplotLib ax objects to be drawn for this animation frame
+    """
     global reference_state_boundary_features, reference_state_names
 
     # clean up residual from previous year to avoid ghosting in generating movie
@@ -1009,6 +1331,17 @@ def map_state_boundaries(current_year, list_items):
 
 
 def map_legislation(current_year, list_items):
+    """
+        Lists legislation active in the current year for the various States
+
+        Parameters
+        ----------
+        current_year
+            integer: current year to display
+            
+        list_items
+            list: MatplotLib ax objects to be drawn for this animation frame
+    """
     global reference_legislation
     legislation_count = 0
 
@@ -1108,9 +1441,37 @@ def map_legislation(current_year, list_items):
                 #list_items.append(pb_txt)
                 legislation_count += 1
     
-    print("Legislation count: " + str(legislation_count))
+    #print("Legislation count: " + str(legislation_count))
 
 def add_legislation(list_items, df_legislation, anchor_x_offset, anchor_y_offset, reference_legislation, legislation_count):
+    """
+        Transform from source to target coordinates.
+
+        Parameters
+        ----------
+        list_items
+            ist: MatplotLib ax objects to be drawn for this animation frame
+
+        df_legislation
+            Dataframe: legislation to list
+
+        anchor_x_offset
+            Float: geocoordinate latitude to start listing from
+
+        anchor_y_offset
+            Float: geocoordinate longitude to start listing from
+
+        reference_legislation
+            List: pre-initialised MatPlotLib ax objects to use in mapping legislation text
+
+        legislation_count
+            Integer: current count of legislation that has been added so far
+
+        Returns
+        -------
+        legal_count
+            Integer: count of legislation items added, building on the legislation_count value at beginning of function call
+    """
     legal_count = legislation_count
 
     y_offset = anchor_y_offset - 0.25
@@ -1136,6 +1497,17 @@ def add_legislation(list_items, df_legislation, anchor_x_offset, anchor_y_offset
     return legal_count
     
 def map_explorers(current_year, list_items):
+    """
+        Map path of explorers
+
+        Parameters
+        ----------
+        current_year
+            integer: current year to display
+            
+        list_items
+            list: MatplotLib ax objects to be drawn for this animation frame
+    """
     global reference_explorer_paths
 
     # clean up residual from previous year to avoid ghosting in generating movie
@@ -1191,6 +1563,26 @@ def map_explorers(current_year, list_items):
         add_explorers(list_items, list_explorers, 106, -27.5, 'purple')
 
 def add_explorers(list_items, explorer_list, anchor_x_offset, anchor_y_offset, colour):
+    """
+        List explorers in recent time window
+
+        Parameters
+        ----------            
+        list_items
+            list: MatplotLib ax objects to be drawn for this animation frame
+
+        explorer_list
+            list: names of explorers to list, processed in reverse order
+
+        anchor_x_offset
+            Float: geocoordinate latitude to start listing from
+
+        anchor_y_offset
+            Float: geocoordinate longitude to start listing from        
+        
+        colour
+            String: colour of text
+    """
     global reference_explorer_names
 
     # clean up residual from previous year to avoid ghosting in generating movie
@@ -1226,6 +1618,17 @@ def add_explorers(list_items, explorer_list, anchor_x_offset, anchor_y_offset, c
 
 
 def map_massacres(current_year, list_items):
+    """
+        Map locations of massacres
+
+        Parameters
+        ----------
+        current_year
+            integer: current year to display
+            
+        list_items
+            list: MatplotLib ax objects to be drawn for this animation frame
+    """
     global massacre_scatter
 
     earliest_recorded_massacre = massacres.index[0]
@@ -1328,7 +1731,8 @@ def map_massacres(current_year, list_items):
             #TODO, create individual ax.scatter objects each with their own alpha values
             massacre_scatter.set_offsets(massacre_plot_locations['position'])
             massacre_scatter.set_sizes(massacre_size)
-            massacre_scatter.set_color(massacre_colour)
+            massacre_scatter.set_facecolors(massacre_colour)
+            massacre_scatter.set_edgecolors('#690a03')
             list_items.append(massacre_scatter)
 
             last_massacre_year = int(pd.to_datetime(massacre_dates[-1]).year)
@@ -1346,6 +1750,23 @@ def map_massacres(current_year, list_items):
                 add_massacres(list_items, list_massacres, 161.7, -11.25)
 
 def add_massacres(list_items, massacre_list, anchor_x_offset, anchor_y_offset):
+    """
+        List massacres in recent time window
+
+        Parameters
+        ----------            
+        list_items
+            list: MatplotLib ax objects to be drawn for this animation frame
+
+        massacre_list
+            list: text fragments of massacres to list, processed in reverse order
+
+        anchor_x_offset
+            Float: geocoordinate latitude to start listing from
+
+        anchor_y_offset
+            Float: geocoordinate longitude to start listing from 
+    """
     global reference_massacre_lines, number_massacre_lines_to_display
 
     # clean up residual from previous year to avoid ghosting in generating movie
@@ -1403,6 +1824,28 @@ def add_massacres(list_items, massacre_list, anchor_x_offset, anchor_y_offset):
         #list_items.append(massacre_txt)
 
 def massacre_display_colour(current_year, massacre_year, anime_massacre_duration):
+    """
+        Determine colour for massacre based on age of event
+
+        Parameters
+        ----------            
+        current_year
+            Integer: current year to determine age of event from
+
+        massacre_year
+            Integer: year of the event
+
+        anime_massacre_duration
+            Integer: number of years over which the animation spans
+
+        Returns
+        -------
+        current_massacre_colour
+            String: hex colour for massacre based on the age of the event
+
+        massacre_alpha
+            Float: Degree of transparency based on the age of the event
+    """
     time_passed = current_year - massacre_year
 
     #cf210a
@@ -1434,6 +1877,23 @@ def massacre_display_colour(current_year, massacre_year, anime_massacre_duration
     return current_massacre_colour, massacre_alpha
 
 def massacre_display_size(number_dead):
+    """
+        Determine diameter of massacre to display based on number of dead
+
+        Parameters
+        ----------            
+        number_dead
+            Integer: number who died in the event
+
+        Returns
+        -------
+        current_massacre_colour
+            String: hex colour for massacre based on the age of the event
+
+        massacre_diam
+            Integer: diameter of circle to display massacre
+    """
+    massacre_diam = 0
     # number ranges from 6 to 200
     '''
     if number_dead <= 10:
@@ -1452,10 +1912,22 @@ def massacre_display_size(number_dead):
         massacre_diam = 256
     return massacre_diam
     '''
-    return number_dead
+    massacre_diam = number_dead
+    return massacre_diam
 
 
 def add_deaths_in_custody(current_year, list_items):
+    """
+        Display Aboriginal and Torres Strait Islander deaths in custody
+
+        Parameters
+        ----------
+        current_year
+            integer: current year to display
+            
+        list_items
+            list: MatplotLib ax objects to be drawn for this animation frame
+    """
     global death_in_custody_royal_commission_1_txt, death_in_custody_royal_commission_2_txt, death_in_custody_txt, aggregate_deaths_in_custody_txt
 
     anchor_x_offset = 133.5
@@ -1501,6 +1973,17 @@ def add_deaths_in_custody(current_year, list_items):
         list_items.append(aggregate_deaths_in_custody_txt)
 
 def add_incarcerated(current_year, list_items):
+    """
+        Display Aboriginal and Torres Strait Islander incarceration numbers
+
+        Parameters
+        ----------
+        current_year
+            integer: current year to display
+            
+        list_items
+            list: MatplotLib ax objects to be drawn for this animation frame
+    """
     global incarcerated_indigenous_txt, incarcerated_nonindigenous_txt
 
     anchor_x_offset = 133.5
@@ -1524,6 +2007,17 @@ def add_incarcerated(current_year, list_items):
 
 
 def map_towns(current_year, list_items):
+    """
+        Map town and city locations based on their founding date
+
+        Parameters
+        ----------
+        current_year
+            integer: current year to display
+            
+        list_items
+            list: MatplotLib ax objects to be drawn for this animation frame
+    """
     global town_scatter
 
     start_slice = 0
@@ -1550,6 +2044,17 @@ def map_towns(current_year, list_items):
         list_items.append(town_scatter)
 
 def map_undated_towns(current_year, list_items):
+    """
+        Map town and city locations for those that do not have a founding date in their data
+
+        Parameters
+        ----------
+        current_year
+            integer: current year to display
+            
+        list_items
+            list: MatplotLib ax objects to be drawn for this animation frame
+    """
     global unknown_town_est_year_scatter
 
     lat = undated_cities[7].values
@@ -1572,6 +2077,38 @@ def map_undated_towns(current_year, list_items):
     list_items.append(unknown_town_est_year_scatter)
 
 def size_town(cities, current_year, lat, lon, pop, plot_locations, pop_size, city_colour, city_perc):
+    """
+        Display Aboriginal and Torres Strait Islander deaths in custody
+
+        Parameters
+        ----------
+        cities
+            Dataframe: data read from file
+        
+        current_year
+            integer: current year to display
+        
+        lat
+            Float: geocoordinate latitude to start listing from
+        
+        lon
+            Float: geocoordinate longitude to start listing from
+        
+        pop
+            Integer: population size of town or city
+        
+        plot_locations
+            Numpy 2D Float Array: empty array to hold location for town
+        
+        pop_size
+            Numpy Integer Array: empty array to hold size of town / city
+        
+        city_colour
+            Numpy Object Array: empty array to hold colour string in or town / city, changes as the settlement ages
+        
+        city_perc
+            Float: size factor of city to display, only used for undated cities to grow to full size over time
+    """
     for i in range(len(cities)):
         plot_locations['position'][i][0] = lon[i]
         plot_locations['position'][i][1] = lat[i]
@@ -1579,13 +2116,20 @@ def size_town(cities, current_year, lat, lon, pop, plot_locations, pop_size, cit
         if city_perc < 0:
             settlement_year = cities.index[i]
             town_age = final_anime_year - settlement_year
-            pop_per_year = pop[i] / town_age
-            current_town_age = current_year - settlement_year
-            current_town_pop = pop_per_year * current_town_age
+            if town_age != 0:
+                pop_per_year = pop[i] / town_age
+                current_town_age = current_year - settlement_year
+                current_town_pop = pop_per_year * current_town_age
 
-            red_delta = int(current_town_age / 9.2)
-            green_delta = int(current_town_age / 3.5)
-            blue_delta = int(current_town_age / 1.77)
+                red_delta = int(current_town_age / 9.2)
+                green_delta = int(current_town_age / 3.5)
+                blue_delta = int(current_town_age / 1.77)
+            else:
+                current_town_pop = 0
+
+                red_delta = int(0)
+                green_delta = int(0)
+                blue_delta = int(0)
         else:
             current_town_pop = pop[i] * city_perc
 
@@ -1611,6 +2155,20 @@ def size_town(cities, current_year, lat, lon, pop, plot_locations, pop_size, cit
         pop_size[i] = town_display_size(current_town_pop)
 
 def town_display_size(current_town_pop):
+    """
+        Calculate town / city size to display based on population size
+
+        Parameters
+        ----------
+        current_town_pop
+            Integer: population of town / city
+
+        Returns
+        -------
+        return
+            display size of town / city
+
+    """
     if pd.isna(current_town_pop):
         pop = 4
     else:
@@ -1619,10 +2177,19 @@ def town_display_size(current_town_pop):
     # treat the population as a volume of a sphere and return the radius
     # V = (4/3)*pi*r^3
     return int((((6*pop)/np.pi)**(1/3))/2)
-    #return int(2*((pop*(3/4))/np.pi)**(1/3)) 
-
 
 def map_railway_lines(current_year, list_items):
+    """
+        Map railway lines
+
+        Parameters
+        ----------        
+        current_year
+            integer: current year to display
+            
+        list_items
+            list: MatplotLib ax objects to be drawn for this animation frame
+    """
     commenced_lines = railway_operating_dates[((railway_operating_dates['Commenced'] <= current_year) & (railway_operating_dates['Opened'] > current_year) & ((railway_operating_dates['Closed'] > current_year) | (railway_operating_dates['Closed'].isna())))]
     opened_lines = railway_operating_dates[((railway_operating_dates['Opened'] <= current_year) & ((railway_operating_dates['Closed'] > current_year) | (railway_operating_dates['Closed'].isna())))]
     closed_lines = railway_operating_dates[(railway_operating_dates['Closed'] <= current_year)]
@@ -1640,6 +2207,36 @@ def map_railway_lines(current_year, list_items):
     #print("Number of railway segments: " + str(num_railway_segments)) 
 
 def map_railway_segments(list_items, mapped_lines, i, num_railway_segments, colour='0.3', line_style='-'):
+    """
+        Map railway segments for a specific railway line
+
+        Parameters
+        ----------
+        list_items
+            list: MatplotLib ax objects to be drawn for this animation frame
+
+        mapped_lines
+            list: railway segments to be mapped for railway line
+
+        i
+            Integer: count of railway lines being mapped for current railway status - commenced, open, closed
+        
+        num_railway_segments
+            Integer: number of railway segments counted so far in mapping the railway lines
+        
+        (Optional) colour
+            String: colour of railway line
+                defaults to '0.3'        
+        
+        (Optional) line_style
+            String: line style for railway line 
+                defaults to '-'
+
+        Returns
+        -------
+        railway_segment_ctr
+            number of railway segments in mapped railway lines
+    """
     global reference_railway_segments
 
     railway_segment_ctr = num_railway_segments
@@ -1702,7 +2299,18 @@ def map_railway_segments(list_items, mapped_lines, i, num_railway_segments, colo
 
     return railway_segment_ctr
 
-def map_missions(current_year, list_items):    
+def map_missions(current_year, list_items):
+    """
+        Map missions
+
+        Parameters
+        ----------        
+        current_year
+            integer: current year to display
+            
+        list_items
+            list: MatplotLib ax objects to be drawn for this animation frame
+    """
     global closed_mission_scatter, open_mission_scatter
 
     closed_missions = missions[((missions['To'] <= current_year) & pd.notna(missions['Lat']) & pd.notna(missions['Lon']))]
@@ -1729,24 +2337,40 @@ def map_missions(current_year, list_items):
 
 
 def list_dimension(testlist, dim=0):
+    """
+        determine number of dimensions that a list holds, calls itself recursively
+
+        Parameters
+        ----------
+        testlist
+            list: list to be tested
+
+        (Optional) dim
+            list: current call depth in recursion
+
+        Returns
+        -------
+        dim
+            returns the dimension in current recursive call
+    """
    # tests if testlist is a list and how many dimensions it has
    # returns -1 if it is no list at all, 0 if list is empty 
    # and otherwise the dimensions of it - from Stackoverflow by https://stackoverflow.com/users/4112844/bunkus
-   if isinstance(testlist, list):
-      if testlist == []:
-          return dim
-      dim = dim + 1
-      dim = list_dimension(testlist[0], dim) #recursion to the end of the dimensions
-      return dim
-   else:
-      if dim == 0:
-          return -1
-      else:
-          return dim
+    if isinstance(testlist, list):
+        if testlist == []:
+            return dim
+        dim = dim + 1
+        dim = list_dimension(testlist[0], dim) #recursion to the end of the dimensions
+        return dim
+    else:
+        if dim == 0:
+            return -1
+        else:
+            return dim
 
 
 #fetch data
-population, state_boundaries, first_nations_milestones, australian_conflicts = init_file_load(display_state_boundaries)
+population, state_boundaries, first_nations_milestones, australian_conflicts = init_file_load(display_state_boundaries, display_first_nations_milestones, display_australian_conflict)
 
 if display_colonisation:
     explorers, cities, undated_cities, railways, railway_operating_dates, massacres, missions, deaths_in_custody, incarceration_rates, defining_moments \
@@ -1785,8 +2409,20 @@ if display_colonisation:
 elif display_legal_controls:
     state_protection_boards, british_legislation, commonwealth_legislation, act_legislation, qld_legislation, wa_legislation, sa_legislation, nsw_legislation, nt_legislation, tas_legislation, vic_legislation = init_legal_file_load()
 
-anim = animation.FuncAnimation(plt.gcf(), update_year, frames=timelapse_period, interval=anime_interval, blit=True, repeat=loop_display, init_func=init)
+if display_white_blak_hx_back_to_back:
+    white_to_blak = 2
+else: 
+    white_to_blak = 1
+
+anim = animation.FuncAnimation(plt.gcf(), update_year, frames=(timelapse_period + (number_repeat_frames_at_start_and_end * 2)) * white_to_blak, interval=anime_interval, blit=True, repeat=loop_display, init_func=init)
+
+if display_white_blak_hx_back_to_back:
+    output_file_name = 'Australia in 4 minutes - a White and Blak history.mp4'
+elif display_blak_history:
+    output_file_name = 'Australia in 2 minutes - a Blak history.mp4'
+else:
+    output_file_name = 'Australia in 2 minutes - a White history.mp4'
 
 #ffmpeg
-anim.save('colonisation.mp4', extra_args=['-vcodec', 'h264', '-framerate', '2', '-vf', 'fps=24', '-pix_fmt', 'yuv420p'])
+anim.save(output_file_name, extra_args=['-vcodec', 'h264', '-framerate', '2', '-vf', 'fps=24', '-pix_fmt', 'yuv420p'])
 #plt.show()

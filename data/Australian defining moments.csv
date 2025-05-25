@@ -1,13 +1,13 @@
 ﻿Event,Blak Hx,From,To,Date
-Commander James Cook claims theeast coast of Australia for Britain in his first voyage to the Pacific,FALSE,1770,1770,22/8/1770
-"On his third and ill fated last voyage to the Pacific, Captain James Cook makes landfall in Tasmania at Adventure Bay, Bruny Island",FALSE,1777,1777,26/1/1777
+Commander James Cook claims the east coast of Australia for Britain in his first voyage to the Pacific,FALSE,1770,1770,22/8/1770
+"On his third and ill-fated last voyage to the Pacific, Captain James Cook makes landfall in Tasmania at Adventure Bay, Bruny Island",FALSE,1777,1777,26/1/1777
 "The Colony of New South Wales declared by the Kingdom of Great Britain 25th April 1787, east of 135° east and all islands adjacent in the Pacific Ocean between the latitudes of 10°37' south and 43°39' south, including most of New Zealand",FALSE,1787,1787,25/4/1787
 "The First Fleet arrives, landing at Sydney Cove 26th Jan 1788 bearing 543 convict men and 189 convict women",FALSE,1788,1788,26/1/1788
 Governor Arthur Phillip proclaimed the establishment of the Colony of New South Wales; 7th Feb 1788,FALSE,1788,1788,7/2/1788
 "Smallpox outbreak hits the local Aboriginal population particularly hard, killing at least half of the Aboriginal population around the Sydney settlement",TRUE,1789,1789,1/4/1789
-"Aboriginal warrior of the Eora nation, Pemulwuy leads the resistance against the Sydney colonists, Governor Phillip is speared but recovers and continues as governor.",TRUE,1790,1802,1/5/1792
+"Aboriginal warrior of the Eora nation, Pemulwuy leads the resistance against the Sydney colonists, Governor Phillip is speared but recovers and continues as governor.",TRUE,1790,1790,7/9/1790
 Establishment of the whaling industry in Sydney,FALSE,1791,1791,1/10/1791
-"Governor Phillip returns to England with two Aboriginal men, Bennelong and Yemmerrawannie. Only Bennelong returns to Australia.",TRUE,1792,1792,
+"Governor Phillip returns to England with two Aboriginal men, Bennelong and Yemmerrawanne. Only Bennelong returns to Australia.",TRUE,1792,1792,
 "The departure of Governor Phillip to England marked the beginning of the Rum Corps, with Major Francis Grose becoming the Lieutenant-Governor",FALSE,1793,1793,
 "Hawkesbury River massacre, first acknowledged massacre of Aboriginal people by white colonists",TRUE,1794,1794,
 Introduction of merino sheep,FALSE,1797,1797,1/7/1797
@@ -47,7 +47,7 @@ Introduction of assisted migration for British settlers,FALSE,1832,1832,
 Mechanics School of Arts opened in Sydney to promote cultural development and learning,FALSE,1833,1833,
 "Convict transportation peaks with nearly 7,000 convicts arriving in one year",FALSE,1833,1833,
 Convict ship Neva wrecked off King Island with the loss of 224 lives,FALSE,1835,1835,13/5/1835
-"John Batman ""negotiates"" the purchase of land from the local Wurundjeri elders (covering the future location of Melbourne), which was then annulled by the Governer of New South Wales",TRUE,1835,1835,
+"John Batman ""negotiates"" the purchase of land from the local Wurundjeri elders (covering the future location of Melbourne), which was then annulled by the Governor of New South Wales",TRUE,1835,1835,
 "The Province of South Australia created 19th Feb 1836, proclamation occurred on 28th Dec 1836",FALSE,1836,1836,6/2/1836
 "Richard Bourke, the Governor of New South Wales, declares the Yarra River settlement as the administrative capital of the Port Phillip District of New South Wales",FALSE,1836,1836,
 Hobart holds the first art exhibition,FALSE,1837,1837,
@@ -56,19 +56,19 @@ Hobart holds the first art exhibition,FALSE,1837,1837,
 "The first 'Protection Board' for managing the Indigenous population is established in Port Phillip District (Victoria), followed by similar controlling structures in other colonies.",TRUE,1839,1839,
 "The islands of New Zealand annexed to New South Wales 15th Jun 1839, proclaimed 14th Jan 1840",FALSE,1839,1839,15/6/1839
 "First volume of John Gould's Birds of Australia published, with Elizabeth Gould a major contributor to the work",FALSE,1840,1840,
-The Treaty of Waitangi signed 6th Feb 1840,TRUE,1840,1850,6/2/1840
+The Treaty of Waitangi signed 6th Feb 1840,TRUE,1840,1840,6/2/1840
 The Colony of New Zealand is chartered and to be split from New South Wales,FALSE,1840,1840,16/11/1840
 "Captain Augustin Lucas is credited with taking the first daguerreotype photograph in Australia of Bridge Street, Sydney",FALSE,1841,1841,13/4/1841
 New Zealand separates from New South Wales to become an independent colony,FALSE,1841,1841,3/05/1841
-"George Goodman starts the first commercial photography venture in Sydney, taking photographic daguerrotype portraits for one guinea each.",FALSE,1842,1842,12/12/1842
-John Wrathall Bull invents and John Ridley manufactures in South Australia the worlds first mechanised grain stripper.,FALSE,1843,1843,
+"George Goodman starts the first commercial photography venture in Sydney, taking photographic daguerreotype portraits for one guinea each.",FALSE,1842,1842,12/12/1842
+"John Wrathall Bull invents, and John Ridley manufactures in South Australia the world's first mechanised grain stripper.",FALSE,1843,1843,
 First elections for the Legislative Council in New South Wales are held,FALSE,1843,1843,
 Norfolk Island transferred from New South Wales to Van Diemen's Land,FALSE,1844,1844,26/9/1844
 Cataraqui wrecks off King Island with 400 dead in Australia's deadliest maritime civil disaster,FALSE,1845,1845,4/8/1845
 The north half of New South Wales north of 26° south made the Colony of North Australia,FALSE,1846,1846,17/2/1846
 "Douglas Kilburn makes daguerreotypes of Kulin people, which are engraved and published in England in 1850",TRUE,1847,1847,
-"Queen Victoria revoked the letters patent esablishing North Australia 28th Dec 1847, proclaimed in Australia 16th Jan 1849",FALSE,1847,1847,28/12/1847
-"The Australlasian Anti-Transportation League, the first popular national movement is established",FALSE,1848,1848,
+"Queen Victoria revoked the letters patent establishing North Australia 28th Dec 1847, proclaimed in Australia 16th Jan 1849",FALSE,1847,1847,28/12/1847
+"The Australasian Anti-Transportation League, the first popular national movement is established",FALSE,1848,1848,
 Ludwig Leichhardt's third expedition vanishes,FALSE,1848,1848,3/4/1848
 Establishment of the Native Police,TRUE,1848,1848,15/6/1848
 Convict transportation from Britain to Port Phillip district ceases,FALSE,1849,1849,
@@ -78,25 +78,25 @@ Black Thursday bushfires devastate the colony of Port Phillip District (Victoria
 Colony of Victoria established,FALSE,1851,1851,1/7/1851
 "Gold is struck in Bathurst, New South Wales and Ballarat, Victoria, marking the start of the Gold Rush era",FALSE,1851,1851,
 The Illustrated Sydney News becomes Australia's first illustrated newspaper,FALSE,1852,1852,
-Gundagai floods - 89 die in Australia's deadliest flood,FALSE,1852,1852,24/6/1852
-Paddle steamers begin plying the Murray river,FALSE,1853,1853,
+"Gundagai, New South Wales floods - 89 die in Australia's deadliest flood",FALSE,1852,1852,24/6/1852
+Paddle steamers begin plying the Murray River,FALSE,1853,1853,
 Convict transportation from Britain to Van Diemen's Land ceases,FALSE,1853,1853,
 "Australia's first steam railway line opens, running from Melbourne to Sandridge (Port Melbourne)",FALSE,1854,1854,12/9/1854
 Eureka Stockade,FALSE,1854,1854,3/12/1854
 "The Chinese population in Australia reaches 50,000",TRUE,1855,1855,
 The European red fox introduced into Australia for recreational hunting,FALSE,1855,1855,
 Van Diemen's Land renamed Tasmania,FALSE,1856,1856,1/1/1856
-James Harrison produces the worlds first ice making machine and refrigerator,FALSE,1856,1856,
+James Harrison produces the world's first ice making machine and refrigerator,FALSE,1856,1856,
 "Secret ballot voting introduced into Australia, first in Tasmania, then Victoria and South Australia, the method pioneered by William Nicholson of Melbourne becomes known as the 'Australian Ballot'",FALSE,1856,1856,
 "Introduction of male suffrage and secret ballot in South Australia (1856), followed by Victoria (1857), New South Wales (1858), and Tasmania (1900). Britain retains control over foreign affairs and defence.",FALSE,1856,1856,4/2/1856
-Melbourne building workers win an eight hour day,FALSE,1856,1856,21/4/1856
+Melbourne building workers win an eight-hour day,FALSE,1856,1856,21/4/1856
 "Norfolk Island is split from Tasmania, becoming its own colony",FALSE,1856,1856,1/11/1856
 "First balloon flight in Australia, Richmond Victoria",FALSE,1858,1858,1/2/1858
 "First organised game of Australian Rules football, likely based on forms of similar Indigenous Australian games",FALSE,1858,1858,7/8/1858
 Colony of Queensland established,FALSE,1859,1859,6/6/1859
 Introduction of rabbits into Australia,FALSE,1859,1859,26/12/1859
 Australia's first stock exchange opens in Melbourne,FALSE,1859,1859,
-John Walter Osborne develops the process of Photolithography in order to record surveyor's maps using glass slides,FALSE,1859,1859,
+John Walter Osborne develops the process of Photolithography to record surveyor's maps using glass slides,FALSE,1859,1859,
 "Burke and Wills expedition, which included the first camels imported into Australia",FALSE,1860,1861,20/8/1860
 "Land Act legislation in Victoria opens up land to settlers, followed by New South Wales the following year",FALSE,1860,1860,18/10/1861
 National Gallery of Victoria established,FALSE,1861,1861,
@@ -116,7 +116,7 @@ National Gallery School of Art of Victoria established,FALSE,1867,1867,
 "Measles outbreak in Sydney, most of the victims are under the age of 4",FALSE,1867,1867,
 "Convict transportation to Australia ends, with convict transportation to Western Australia ceasing",FALSE,1868,1868,9/1/1868 
 Aboriginal cricket team tours England,TRUE,1868,1868,16/5/1868
-Granny Smith Apple cultivar propogated by Maria Ann Smith in New South Wales,FALSE,1868,1868,
+Granny Smith Apple cultivar propagated by Maria Ann Smith in New South Wales,FALSE,1868,1868,
 "Joseph Keen from Tasmania wins a medal for his Keen's Curry Powder (not related to the English Keen's Mustard, with both products acquired by McCormick's Foods in 1998)",FALSE,1869,1869,
 "Newspaper columnist, Marcus Clarke writes about the coffee stalls in Melbourne which date to at least the 1850s",FALSE,1869,1869,
 An Act for the 'Protection and Management of Aboriginal Natives' is passed in the parliament of Victoria,TRUE,1869,1869,
@@ -130,17 +130,17 @@ Queensland annexes all islands within 60 miles (97 km) of its coast to incorpora
 "Free, compulsory and secular education introduced in Victoria",FALSE,1872,1872,17/12/1872
 Louis Brennan invents the underwater torpedo,FALSE,1874,1874,
 "Scarlet Fever epidemic, killing 8,000+",FALSE,1875,1875,
-Richard and Clarence Bowyer Smith invent the stump-jump plough allowing plowing of fields with stumps and stones,FALSE,1876,1876,
+Richard and Clarence Bowyer Smith invent the stump-jump plough allowing ploughing of fields with stumps and stones,FALSE,1876,1876,
 The Victoria Football Association (VFA) is established,FALSE,1877,1877,
 Frederick York Wolseley invents the first practical mechanical wool shearing clippers,FALSE,1877,1877,
-"Phylloxera first detected in Geelong before spreading to other states. While many vineyards converted to resistent American rootstocks many Australian vineyards are still on European rootstocks, especially in South Australia",FALSE,1877,1877,
+"Phylloxera first detected in Geelong before spreading to other states. While many vineyards converted to resistant American rootstocks many Australian vineyards are still on European rootstocks, especially in South Australia",FALSE,1877,1877,
 "Loch Ard sinks off the Shipwreck Coast, Victoria with the loss of 53 people",FALSE,1878,1878,1/6/1878
 Banana plantations started in Queensland,FALSE,1878,1878,
 First Greek fish and chip shop opened in Sydney,FALSE,1879,1879,
 Australia's first national park created in Sydney,FALSE,1879,1879,26/4/1879
 All Torres Strait Islands are annexed by Queensland,FALSE,1879,1879,27/7/1879
 The Bulletin established,FALSE,1880,1880,31/1/1880
-Macquarie Island transferred to the Colony of Tasmania,FALSE,1880,1850,17/6/1880
+Macquarie Island transferred to the Colony of Tasmania,FALSE,1880,1880,17/6/1880
 Ned Kelly hanged after the shootout and capture at Glenrowan,FALSE,1880,1880,28/6/1880
 Smallpox epidemic in southern States from 1881 to 1885,FALSE,1881,1881,
 "Queensland claims southeast New Guinea as a dependency, which is rejected by the British Government",FALSE,1883,1883,4/4/1883
@@ -150,11 +150,11 @@ First regional art gallery in Australia opens in Ballarat,FALSE,1884,1884,
 BHP begins mining at Broken Hill,FALSE,1885,1885,1/1/1885
 "Victorian Employers' Union formed, forerunner of the Australian Chamber of Commerce and Industry",FALSE,1885,1885,13/3/1885
 "Beginnings of the Heidelberg school (an art movement of Australian Impressionism), most being students of the National Gallery School of Art in Melbourne",FALSE,1885,1885,
-The Chaffey brothers introduce irrigation from the Murray river,FALSE,1887,1887,14/2/1887
+The Chaffey brothers introduce irrigation from the Murray River,FALSE,1887,1887,14/2/1887
 RMIT University in Melbourne introduces the first photography course as an inaugural discipline. It is the oldest ongoing photography course in the world,FALSE,1887,1887,
 Start of the pearling industry in Broome,FALSE,1888,1888,
-Melbourne Centenial Exhibition,FALSE,1888,1888,
-"Australian Art published, the first Australian magazine devoted to art",FALSE,1888,1888,
+Melbourne Centennial Exhibition,FALSE,1888,1888,
+Australian Art published; the first Australian magazine devoted to art,FALSE,1888,1888,
 "Black stem rust epidemic causes significant loss in wheat production, requiring importing of wheat",FALSE,1889,1889,
 Arthur James Arnot patents the first electric drill,FALSE,1889,1889,
 9 by 5 Impressionist exhibition in Melbourne,FALSE,1889,1889,17/8/1889
@@ -166,16 +166,17 @@ Maritime and Shearers' strikes,FALSE,1890,1891,
 Creation of the Australian Labor Party,FALSE,1891,1891,3/7/1891
 "Typhoid epidemic in Western Australia between 1891 - 1910, killing over 2,000",FALSE,1891,1891,
 Arthur Patrick McCormick invents the Coolgardie safe for preserving and keeping food cool,FALSE,1892,1892,
+"Cyclone Bundinyong bring heavy rains and flooding to Ipswich in Queensland, known as the Black February Flood",FALSE,1893,1893,
 "Lawrence Hargrave's first heavier than air box kite flight, the designs of which were to later make it into the American Wright Brothers Wright Flyer to achieve the first powered flight with a pilot on board in 1903.",FALSE,1894,1894,12/11/1894
 "Woman's suffrage introduced in South Australia, first electorate in the world",FALSE,1894,1894,
 "Federation Drought; 1895 - 1903, the worst since the start of European settlement",FALSE,1895,1903,
 Heat wave in south-eastern Australia kills 427 people,FALSE,1895,1895,
 Edwin Flack becomes Australia's first Olympian,FALSE,1896,1896,
 "One-guinea Pocket Kodak cameras are introduced into Australia. Over 3,000 are sold within two months",FALSE,1896,1896,
-"The inaugural seaon of the Victorian Football League (VFL), having formed out of the VFA",FALSE,1897,1897,
+"The inaugural season of the Victorian Football League (VFL), having formed out of the VFA",FALSE,1897,1897,
 Crown Studios in Sydney introduces colour photography using the three-exposure Joly and Ives process,FALSE,1899,1899,
 Three-minute automatic photo booths are established in Sydney,FALSE,1899,1899,
-"Australia's deadliest cyclone Mahina at Bathurst Bay, Queensland with over 410 deaths",FALSE,1899,1899,4/3/1899
+"Australia's deadliest Cyclone Mahina at Bathurst Bay, Queensland with over 410 deaths",FALSE,1899,1899,4/3/1899
 Bubonic plague arrives in Australia,FALSE,1900,1900,19/01/1900
 "The Kodak Brownie, the first mass-marketed camera, is released",FALSE,1900,1900,
 Neville Howse becomes the first Australian to receive a Victoria Cross while serving with the NSW Army Medical Corps in the Second South African (Boer) War,FALSE,1900,1900,24/07/1900
@@ -186,7 +187,7 @@ White Australia policy enshrined in law,TRUE,1901,1901,23/12/1901
 Harry 'Breaker' Morant executed,FALSE,1902,1902,27/02/1902
 Mount Kembla mining disaster results in the deaths of 96 miners,FALSE,1902,1902,
 Women of European descent given the vote in federal elections,FALSE,1902,1902,12/06/1902
-William Farrer's black stem rust and drought resistent 'Federation' wheat released,FALSE,1903,1903,
+William Farrer's black stem rust and drought resistant 'Federation' wheat released,FALSE,1903,1903,
 Charles Potter and Guillaume Delprat develop the froth flotation process for separating minerals from rocks,FALSE,1903,1903,
 "Picture postcards combining photography, printing, and postage become popular",FALSE,1905,1905,
 "Australia takes control of British New Guinea as an 'external territory', becoming the Territory of Papua",FALSE,1906,1906,1/09/1906
@@ -233,6 +234,7 @@ Founding of the Advisory Council of Science and Industry which would later becom
 "Founding of the Sydney Camera Circle, heavily influenced by and influencing the Pictoralist approach to photography, emphasising sunlight rather than the shadows common of the overseas Pictoralist movement",FALSE,1916,1916,
 Conscription for overseas military service defeated in two referendums,FALSE,1916,1916,
 First Anzac Day commemorations,FALSE,1916,1916,25/04/1916
+A cyclone along the Whitsunday Passage results in heavy rainfall and flooding,FALSE,1916,1916,
 The Clements Brothers invent Gravox,FALSE,1917,1917,
 Frank Hurley is appointed Australia's first official war photographer for the Australian Imperial Force,FALSE,1917,1917,
 Francis McNamara is awarded the Victoria Cross while serving in the Australian Flying Corp near Gaza for rescuing a fellow downed pilot,FALSE,1917,1917,20/03/1917
@@ -247,7 +249,7 @@ Treaty of Versailles signed following the end of the First World War,FALSE,1919,
 First flight crossing the Australian continent from Melbourne to Darwin by Henry Wrigley and Arthur Murphy,FALSE,1919,1919,16/11/1919
 The Australian government posted an award for the first plane to fly from Britain to Australia. Ross Smith and his brother Keith Smith along with mechanics James Bennett and Wally Shiers claimed the prize,FALSE,1919,1919,10/12/1919
 First flight across Bass Straight from Tasmania to Victoria by Arthur Long,FALSE,1919,1919,16/12/1919
-Financial inflation/recession from 1919 - 1923,FALSE,1919,1923,
+Financial inflation/recession of 1919 - 1923,FALSE,1919,1923,
 "Anthony Mitchell invents the crankless engine, removing the need for a crankshaft to start an engine",FALSE,1920,1920,
 Anzac Biscuit recipe first published,FALSE,1920,1920,
 Country Party founded at national level,FALSE,1920,1920,22/11/1920
@@ -259,7 +261,7 @@ Broome race riots,TRUE,1920,1920,23/12/1920
 First Archibald prize for portraiture is awarded to WB McInnes for Desbrowe Annear,FALSE,1921,1921,
 "Cyrill Callister of the Fred Walker Company develops vegemite, began selling in stores the following year",FALSE,1922,1922,
 The Country Women's Association (CWA) is formed,FALSE,1922,1922,
-"Edward Hallstrom begins producing the first commercially available domestic refigerators using kerosene as a power source, followed by an electrically powered version in 1928",FALSE,1923,1923,
+"Edward Hallstrom begins producing the first commercially available domestic refrigerators using kerosene as a power source, followed by an electrically powered version in 1928",FALSE,1923,1923,
 "Grain Products Limited launched Weet-Bix, later acquired by Sanitarium in 1928",FALSE,1923,1923,
 Introduction of compulsory voting at federal elections (not extending to Aboriginal and Torres Strait Islander people),FALSE,1924,1924,
 "MacRobertson Chocolates (later acquired by Cadbury) introduces the Cherry Ripe, Australia's oldest chocolate bar",FALSE,1924,1924,
@@ -271,11 +273,12 @@ Black Sunday bushfire in Victoria,FALSE,1926,1926,
 Cactoblastis cactorum moths introduced as a biological control against prickly pear invasion,FALSE,1926,1926,
 Alfred Traeger invents a pedal operated two-way radio,FALSE,1927,1927,
 The Northern Territory is split at 20° south into Central Australia and North Australia,FALSE,1927,1927,1/02/1927
+"Torrential rain following a cyclone hitting north of Cairns, cause widespread floods through Queensland",FALSE,1927,1927,
 "Parliament begins meeting in Canberra, moving the capital from Melbourne",FALSE,1927,1927,9/05/1927
 "The first commercial espresso machine arrives in Australia, installed in the Café Florentino, Burke Street Melbourne",FALSE,1928,1928,
 First mention of a Dim Sim in the Melbourne Argus,FALSE,1928,1928,
 Edgar H Booth and Mark C Liddell invent the electronic heart pacemaker,FALSE,1928,1928,
-"Reverend John Flynn creates the worlds first air ambulance, which would later be named the Royal Flying Doctor Service (RFDS)",FALSE,1928,1928,
+"Reverend John Flynn creates the world's first air ambulance, which would later be named the Royal Flying Doctor Service (RFDS)",FALSE,1928,1928,
 Bert Hinkler becomes the first person to fly solo from England to Australia,FALSE,1928,1928,22/02/1928
 "Charles Kingsford Smith lands in Brisbane completing flight over the Pacific, along with relief pilot Charles Ulm, and Americans; radio operator James Warner and navigator and engineer Harry Lyon",FALSE,1928,1928,9/06/1928
 Donald Bradman's first international cricketing century,FALSE,1928,1928,9/06/1928
@@ -284,6 +287,7 @@ Charles Kingsford Smith and Charles Ulm make the first non-stop flight from Melb
 Hubert Wilkens makes the first flight over the Antarctic Continent,FALSE,1928,1928,20/12/1928
 "Global financial 'Great Depression' caused a massive shock to the Australian economy with 32% unemployed by 1932, with the impact felt from 1929 to 1939",FALSE,1929,1939,24/10/1929
 Charlie Booth and his father invent the starting block used in track and field sprint events,FALSE,1929,1929,
+Northern Tasmania floods,FALSE,1929,1929,
 Sydney's General Post Office (GPO) is the first site with a mechanised letter sorter,FALSE,1930,1930,
 Frank Thring Sr of Efftee Studios in Melbourne invents the clapper board to synchronise sound and film,FALSE,1930,1930,
 Amy Johnson becomes the first female to fly solo from England to Australia,FALSE,1930,1930,24/05/1930
@@ -306,6 +310,7 @@ The illustrated Walkabout magazine begins publication in Australia,FALSE,1934,19
 "John and Sunday Reed purchase Heide in Melbourne, from which the Heide Circle emerged, and now the location of the Heide Museum of Modern Art",FALSE,1934,1934,
 "Justus Jorgensen establishes Montsalvat, an artists' community in Eltham, Melbourne",FALSE,1934,1934,
 The Ashmore and Cartier Islands are transferred from the United Kingdom,FALSE,1934,1934,10/05/1934
+Melbourne and South Gippsland floods,FALSE,1934,1934,
 Introduction of cane toads into Queensland,FALSE,1935,1935,24/06/1935
 "Art in Australia publishes Max Dupain's images informed by the functionalist aesthetic of the New Photography movement, signalling the beginning of modernist photography in Australia",FALSE,1935,1935,
 "United Kingdom transferred its Antarctica claim to Australia, becoming the Australian Antarctic Territory",FALSE,1936,1936,24/08/1936
@@ -316,12 +321,12 @@ William Ferguson and Jack Pattern launch the Aborigines Progressive Association,
 "Edward Both invents the Both respirator or 'iron lung', a more affordable alternative to the more expensive machines available at the time",FALSE,1937,1937,
 Max Dupain captures the iconic Sunbaker photo,FALSE,1937,1937,
 Kodachrome 35mm roll film becomes available in Australia,FALSE,1937,1937,
-"Sesquicentenary celebrations of the landing of the first fleet, including a reanactment with coerced Aboriginal men from Menindee mission",TRUE,1938,1938,26/01/1938
+"Sesquicentenary celebrations of the landing of the first fleet, including a re-enactment with coerced Aboriginal men from Menindee mission",TRUE,1938,1938,26/01/1938
 "Aboriginal Day of Mourning and Protest in response to the sesquicentenary, first national meeting of Aboriginal people for citizenship rights",TRUE,1938,1938,26/01/1938
 Nora Heysen becomes the first woman to win the Archibald prize with her portrait Mme Elink Schuurman,FALSE,1938,1938,
 The Contemporary Camera Groupe is formed by Max Dupain,FALSE,1938,1938,
 The Territory of Ashmore and Cartier Islands is annexed to the Northern Territory. The Federal Capital Territory was renamed the Australian Capital Territory,FALSE,1938,1938,29/07/1938
-Heat wave in Victoria followed by the Black Friday bushfires kills 438,FALSE,1938,1938,
+Heat wave in Victoria followed by the Black Friday bushfires kill 438,FALSE,1938,1938,
 Black Friday bushfires in Victoria,FALSE,1939,1939,13/01/1939
 "Prime Minister Menzies announces over the radio that 'Australia is at war', marking Australia's entry into World War II",FALSE,1939,1939,3/09/1939
 Introduction of compulsory military service,FALSE,1939,1939,
@@ -342,7 +347,7 @@ The Mandate of Nauru is captured by Japan,FALSE,1942,1942,26/08/1942
 Introduction of conscription,FALSE,1943,1943,19/02/1943
 "First women elected to the Australian Parliament, Dame Enid Lyons and Senator Dorothy Tangney",FALSE,1943,1943,21/08/1943
 Formation of the Liberal Party of Australia,FALSE,1944,1944,16/10/1944
-Lance Hill invents the Hills Hoist rotary clothes line (although the clothes line design was originally patented by Gilbert Toyne in Adelaide in 1926),FALSE,1945,1945,
+Lance Hill invents the Hills Hoist rotary clothesline (although the clothesline design was originally patented by Gilbert Toyne in Adelaide in 1926),FALSE,1945,1945,
 "Australia plays a significant role in the founding of the United Nations advocating for smaller nations to have a vote, with the UN replacing the pre-war League of Nations",FALSE,1945,1945,26/06/1945
 National introduction of sickness and unemployment benefits,FALSE,1945,1945,1/07/1945
 "Adopting a populate or perish policy, the Australian Government announces a post war immigration drive, softening the White Australia policy",TRUE,1945,1945,2/08/1945
@@ -352,7 +357,7 @@ Agreement of Commonwealth and state governments to celebrate Australia Day on Ja
 "Polio epidemic, killing over 1,000 and crippling many more children for life. The epidemic went from 1946 until the vaccine was introduced in 1956",FALSE,1946,1946,
 The Territory of New Guinea was reconstituted as a United Nations trust territory,FALSE,1946,1946,13/12/1946
 The Mandate of Nauru was reconstituted as the United Nations Trust Territory of Nauru,FALSE,1947,1947,1/11/1947
-Heard Island and McDonald Islands are transferred from the Unitied Kingdom to Australia,FALSE,1947,1947,26/12/1947
+Heard Island and McDonald Islands are transferred from the United Kingdom to Australia,FALSE,1947,1947,26/12/1947
 The Institute of Photographic Illustrators is formed in Sydney,FALSE,1947,1947,
 "The first locally made mass-production car launched, the Holden FX",FALSE,1948,1948,29/11/1948
 "Law enacted defining Australian citizenship, as up until this point Australians were deemed as British subjects",FALSE,1949,1949,26/01/1949
@@ -361,7 +366,7 @@ The Territory of New Guinea and Territory of Papua merged into the Territory of 
 "The Menzies Liberal government elected, the longest serving in Australian history for 23 years.",FALSE,1949,1949,10/12/1949
 "Korean War starts, ending in a stalemate and perpetual frozen conflict in 1953",FALSE,1950,1950,25/06/1950
 Frank McEncroe creates the Chiko Roll,FALSE,1951,1951,
-"The CSIRO made CSIRAC computer plays the song 'Colonel Bogey March', the world's first instance of computer generated music",FALSE,1951,1951,
+"The CSIRO made CSIRAC computer plays the song 'Colonel Bogey March', the world's first instance of computer-generated music",FALSE,1951,1951,
 "Eruption of Mount Lamington, Territory of Papua and New Guinea, killing 2,942",FALSE,1951,1951,
 Conscription for the Korean war went from 1951 to 1959. Conscripted National Servicemen 'Nashos' did not end up serving overseas,FALSE,1951,1951,
 Australia signs the ANZUS Treaty with New Zealand and the United States,FALSE,1951,1951,1/09/1951
@@ -379,6 +384,7 @@ Dr David Warren invents the black box flight recorder,FALSE,1954,1954,
 "Soviet spies, Vladimir and Evdokia Petrov masquerading as diplomats, defect to Australia",FALSE,1954,1954,3/04/1954
 Australia's first Uranium mining commenced at the Rum Jungle mine in Northern Territory,FALSE,1954,1954,17/09/1954
 Edward Bowen of the CSIRO invented and developed the Distance Measuring Equipment (DME) used to measure the distance between a plane and a ground station for navigation,FALSE,1955,1955,
+Hunter Valley floods in New South Wales,FALSE,1955,1955,
 "Democratic Labor Party formed from a Labor Party split, partially stemming from fallout from the Petrov affair",FALSE,1955,1955,14/03/1955
 "Cocos (Keeling) Islands transferred by the United Kingdom from the Colony of Singapore to Australia, becoming the Territory of the Cocos (Keeling) Islands",FALSE,1955,1955,23/11/1955
 Invention of the pneumatic broadacre air seeder,FALSE,1956,1956,
@@ -389,19 +395,19 @@ Television broadcasts introduced in Australia,FALSE,1956,1956,16/09/1956
 First nuclear weapons test by British at Maralinga,FALSE,1956,1956,27/09/1956
 "Melbourne hosts the Olympics, the first outside of Europe or the United States",FALSE,1956,1956,22/11/1956
 "Ian McWilliam invents the flame ionisation detector, still one of the most accurate instruments developed for the detection of emissions",FALSE,1957,1957,
-Dr Arthur Farnworth of the CSIRO invents the SiroSet process for producing permanent creases in woolen fabrics,FALSE,1957,1957,
+Dr Arthur Farnworth of the CSIRO invents the SiroSet process for producing permanent creases in woollen fabrics,FALSE,1957,1957,
 "Albert (Elea) Namatjira becomes the first recorded Aboriginal person in the Northern Territory to be freed from the wards of the state restrictions, being granted full rights of citizenship",TRUE,1957,1957,
 "Christmas Island transferred by the United Kingdom from the Colony of Singapore to Australia, becoming the Territory of Christmas Island",FALSE,1958,1958,1/10/1958
 "ICI House (now Orica House) in Melbourne completed construction, the first modern skyscraper in Australia at 20 stories and 84 m in height",FALSE,1958,1958,11/12/1958
 "Jack Brabham becomes the first Australian to win a Formula One world championship, winning in a car of his own design",FALSE,1959,1959,12/12/1959
-Eric Favelle creates the self constructing tower crane,FALSE,1960,1960,
-"Scientific Optical Laboratories of Adelaide produce the worlds first plastic spectacle lenses, reducing the weight of glass lenses by 60%",FALSE,1960,1960,
+Eric Favelle creates the self-constructing tower crane,FALSE,1960,1960,
+"Scientific Optical Laboratories of Adelaide produce the world's first plastic spectacle lenses, reducing the weight of glass lenses by 60%",FALSE,1960,1960,
 The federal government lifts ban on iron ore exports that had been in place since 1938,FALSE,1960,1960,24/11/1960
 Introduction of the oral contraceptive pill,FALSE,1961,1961,1/02/1961
 First Tupperware party in Australia,FALSE,1961,1961,
 David Robinson and George Kossoff work at the Department of Health leads to the first commercially practical water bath medical ultrasound,FALSE,1961,1961,
 "The Australian Soccer Federation is established, later becoming the Australian Soccer Association then the Football Federation Australia",FALSE,1961,1961,
-"Aborignal and Torres Strait Islanders given the right to vote federally, regardless of State voting restrictions",TRUE,1962,1962,21/05/1962
+"Aboriginal and Torres Strait Islanders given the right to vote federally, regardless of State voting restrictions",TRUE,1962,1962,21/05/1962
 Kodak makes the first instamatic cameras and colour Polaroids are introduced,FALSE,1963,1963,
 "Mervyn Bishop begins a cadetship at the Sydney Morning Herald, later becoming Australia's first Indigenous press photographer",TRUE,1963,1963,
 Yirrkala bark petitions are presented to Australian Parliament's House of Representatives formally seeking to have the Yolngu people's land rights recognised,TRUE,1963,1963,14/08/1963
@@ -439,6 +445,7 @@ The BLF impose the world's first green ban to protect a patch of bushland on Syd
 Neville Bonner of the Jagera people becomes the first Indigenous parliamentarian,TRUE,1971,1971,
 Aboriginal and Torres Strait Islander people counted in the census for the first time,TRUE,1971,1971,30/06/1971
 Ted and Dorothy Wotherspoon become the first Aboriginal publicans in Australia in the New South Wales mining town of Catherine Hill Bay,TRUE,1971,1971,
+Gough Whitlam becomes the first Western leader to visit China during the Cold War,FALSE,1971,1971,1/07/1971
 The Territory of Papua and New Guinea renamed to Papua New Guinea,FALSE,1971,1971,27/12/1971
 Aboriginal Tent Embassy established on Parliament House lawns in Canberra,TRUE,1972,1972,26/01/1972
 Aboriginal artists from the settlement of Papunya begin painting traditional designs which was the beginning of the Western Desert art movement,TRUE,1972,1972,1/06/1972
@@ -452,6 +459,7 @@ Dr Bill Denholm and Dr John Floyd at the CSIRO and with Mount Isa Mines develop 
 Patrick White wins the Nobel Prize in Literature for his body of written works,FALSE,1973,1973,18/10/1973
 Sydney Opera House opens,FALSE,1973,1973,20/10/1973
 The peninsula along Jervis Bay ceded to the ACT is formally named the Jervis Bay Territory,FALSE,1973,1973,31/12/1973
+Brisbane flooded after Cyclone Wanda hits the north of the city,FALSE,1974,1974,
 Gordon Withnall invents the Super Sopper for quickly soaking up water from sporting grounds to allow play to continue after rain,FALSE,1974,1974,
 The Whitlam government abolishes university fees,FALSE,1974,1974,
 """The Art of Aboriginal Australia"" is the first major international exhibition of contemporary Australian Indigenous art, exhibited in Canada",TRUE,1974,1974,
@@ -489,7 +497,7 @@ Bruce Thompson of Caroma in Australia develops the dual flush toilet,FALSE,1980,
 The Australian National University develop the Sensitive high mass-resolution ion microprobe (SHRIMP) for metallurgical assessment of rock samples,FALSE,1980,1980,
 Phillip Hercus and Robert Clifford of Incat in Tasmania create the wave-piercing catamaran,FALSE,1980,1980,
 Bill Jonas is the first Indigenous Australian to be awarded a PhD by the University of Papua New Guinea,TRUE,1980,1980,
-The Defence Science and Technology Group develop the worlds first practical hovering rocket,FALSE,1981,1981,2/05/1981
+The Defence Science and Technology Group develop the world's first practical hovering rocket,FALSE,1981,1981,2/05/1981
 "Professor Colin Sullivan of Sydney University develop the Continuous Positive Airflow Pressure (CPAP) mask to treat sleep disordered breathing, which was commercialised in 1989 by ResMed",FALSE,1981,1981,
 Publication of the Macquarie Dictionary,FALSE,1981,1981,21/09/1981
 "VFLs South Melbourne Football club moves to Sydney and becomes the Sydney Swans, the first interstate VFL team",FALSE,1982,1982,
@@ -503,16 +511,17 @@ Australian dollar floated,FALSE,1983,1983,12/12/1983
 Introduction of Medicare,FALSE,1984,1984,1/02/1984
 Aboriginal and Torres Strait Islander people gained full elector equality with enrolling to vote made compulsory at federal elections for Indigenous Australians,TRUE,1984,1984,
 The world's first frozen embryo baby is born in Melbourne,FALSE,1984,1984,28/03/1984
-The baby safety capsule is invented for transporting new borns in cars,FALSE,1984,1984,
+The baby safety capsule is invented for transporting new-borns in cars,FALSE,1984,1984,
 The Audio-Tactile Pedestrian Detector (PB/5 ATPD) developed for safe pedestrian road crossings,FALSE,1984,1984,
 Sex Discrimination Act passed in the Australian Parliament,FALSE,1984,1984,1/08/1984
 "Dr Richard Fawdry and Dr Bill Burch invents Technegas, an inhalable radioactively tagged aerosol, used for imaging of lung ventilation",FALSE,1985,1985,
 "Dr Robert Clancy of University of Newcastle develops the bronchitis vaccine, reducing attacks of acute bronchitis by up to 90%",FALSE,1985,1985,
 Australian Government returns Uluru to its traditional owners,TRUE,1985,1985,26/10/1985
-"NADOC '86 Exhibition of Aboriginal and Islander Photographers, the first exhibition by Indigeneous photographers, shown at the Aboriginal Artists Gallery, Sydney",TRUE,1986,1986,
+"NADOC '86 Exhibition of Aboriginal and Islander Photographers, the first exhibition by Indigenous photographers, shown at the Aboriginal Artists Gallery, Sydney",TRUE,1986,1986,
 "CSIRO scientists, Wayne Gerlach and Jim Haseloff discover gene shears, genetic material that can be used to cut out genes from DNA",FALSE,1986,1986,
 The Australia Act 1986 makes Australia completely independent of the United Kingdom,FALSE,1986,1986,3/03/1986
 "Russell St bombing, Melbourne",FALSE,1986,1986,27/03/1986
+"Hawkesbury and Georges River floods, dubbed Sydney's wettest day ever.",FALSE,1986,1986,
 "Hoddle St massacre, Melbourne",FALSE,1987,1987,9/08/1987
 "Queen St massacre, Melbourne",FALSE,1987,1987,8/12/1987
 "Boomalli Aboriginal Artists Co-operative Gallery established by Brenda L Croft, Tracey Moffat, and Michael Riley to promote urban Aboriginal art",TRUE,1987,1987,
@@ -525,14 +534,14 @@ Jervis Bay Territory split from the ACT to become its own territory,FALSE,1989,1
 Hawke government introduces HECS fees for higher education,FALSE,1989,1989,
 "Ron Warrender and Milutin Stoilovic at the Australian National University develop Unilite, a forensic tool for seeing fingerprints, scribbled over writing, or reworked paintings. Rofin Australia Pty Ltd have developed this into the portable Polilight",FALSE,1989,1989,
 Earthquake hits Newcastle,FALSE,1989,1989,28/12/1989
-"Following the international stock market crashes starting from Oct, 1987, Australia went into ""The recession we had to have"" with a number of financial institutions collapsing",FALSE,1990,1990,
+"Following the international stock market crashes starting from Oct, 1987, Australia went into ""The recession we had to have"" with several financial institutions collapsing",FALSE,1990,1990,
 "The VFL gets renamed to the AFL, reflecting its national composition",FALSE,1990,1990,
 "Millenium drought spanning from 1991 to 2010, regarded as the worst drought recorded since European colonisation, commencing in Queensland in 1991 before spreading to the southern states in the following years",FALSE,1991,2010,
-The CSIRO develop the buffalo fly trap for removing the flys from cows,FALSE,1991,1991,
+The CSIRO develop the buffalo fly trap for removing the buffalo flies from cows,FALSE,1991,1991,
 "Dr Michael Ryan and Dr Stephen Ruff at Sydney's North Shore Hospital develop the plastic rod bone repair technique, replacing metal pins and screws which interfere with MRI and CAT scans",FALSE,1991,1991,
 "Dr Victor Chang at St Vincent's Hospital, Sydney develops the St Vincents heart valve for the replacement of dysfunctional ventricle heart valves",FALSE,1991,1991,
 Port Hedland immigration detention centre opens,FALSE,1991,1991,5/05/1991
-Stephen Newman from Queensland invents the world's first mult-focal contact lens,FALSE,1992,1992,
+Stephen Newman from Queensland invents the world's first multi-focal contact lens,FALSE,1992,1992,
 Dr Fiona Wood at Royal Perth Hospital develops spray-on skin for treatment of damaged skin such as from burns or abrasions,FALSE,1992,1992,
 Ric Richardson patents software product activation to allow the digital distribution of his own software,FALSE,1992,1992,
 Mabo native title case recognised in High Court decision,TRUE,1992,1992,3/06/1992
@@ -551,12 +560,12 @@ Northern Territory passes a Voluntary Assisted Dying law which was nullified by 
 "CSIRO patents the technology used by Wi-Fi, although the Wi-Fi trademark is owned by a US based consortium",FALSE,1996,1996,23/01/1996
 "A team at Monash University in Melbourne led by Mark von Itzstein develop Relenza, and anti-flu medication",FALSE,1996,1996,
 "National Firearms Agreement follows Port Arthur massacre, where 35 were killed",FALSE,1996,1996,28/04/1996
-Nova Peris at the Atlanta Olympics becomes the first Indigenous Australian to win an Olympic gold medel,TRUE,1996,1996,
+Nova Peris at the Atlanta Olympics becomes the first Indigenous Australian to win an Olympic gold medal,TRUE,1996,1996,
 Elizabeth Reef and Middleton Reef transferred from New South Wales to the Coral Sea Island Territory,FALSE,1997,1997,7/07/1997
 "Thredbo landslide, kills 18",FALSE,1997,1997,30/07/1997
 George Briscoe becomes the first Indigenous Australian to be awarded a PhD from an Australian University (ANU),TRUE,1997,1997,
 Australia votes 'No' in a referendum on whether Australia should become a republic,FALSE,1999,1999,
-Walk for Reconcilliation across Sydney Harbour Bridge,TRUE,2000,2000,28/05/2000
+Walk for Reconciliation across Sydney Harbour Bridge,TRUE,2000,2000,28/05/2000
 Cathy Freeman lights the Olympic flame at the Sydney Olympics and wins the 400 m gold medal,FALSE,2000,2000,15/09/2000
 "Australian troops take control of the Norwegian Tampa cargo vessel carrying rescued asylum-seekers, refusing it entry into Australian waters",FALSE,2001,2001,26/08/2001
 ACT becomes the first jurisdiction in Australia to decriminalise abortions,FALSE,2002,2002,
@@ -567,7 +576,7 @@ Canberra firestorm destroys 510 properties and the deaths of four people,FALSE,2
 "Peter Stephinson invents Blast Glass, which proved effective in protecting the Australian Embassy in the Jakarta bombings of 2004",FALSE,2003,2003,
 "The CSIRO develop the UltraBattery, a hybrid technology combining a traditional lead-acid battery with a supercapacitor",FALSE,2003,2003,
 Kodak Australia closes its manufacturing plant in Melbourne,FALSE,2004,2004,
-Redfern riots following the death of a 17 year old Aboriginal teenager who was being chased by the police,TRUE,2004,2004,15/02/2004
+Redfern riots following the death of a 17-year-old Aboriginal teenager who was being chased by the police,TRUE,2004,2004,15/02/2004
 US free trade agreement signed,FALSE,2004,2004,18/05/2004
 Cronulla race riots,FALSE,2005,2005,11/12/2005
 "Professor Ian Frazer from University of Queensland creates a vaccine for preventing cervical cancer. The commercial vaccine, Gardasil provides protection against certain types of HPV",FALSE,2006,2006,
@@ -584,8 +593,8 @@ Ken Wyatt becomes the first Indigenous member of the House of Representatives,TR
 Julia Gillard becomes the first female prime minister,FALSE,2010,2010,24/06/2010
 "A team at the University of Queensland develop Robotic Visual Horizon, allowing autonomous unmanned flight modelled on how bee's brains process visual information when flying",FALSE,2010,2010,
 "The Museum of Old and New Art (MONA) owned by David Walsh opens in Hobart, replacing its precursor, the Moorilla Museum of Antiquities which ran from 2001 to 2006. MONA is also strongly associated with the MOFO festival",FALSE,2011,2011,21/01/2011
-"National ICT Australia and Open Kernel Labs release seL4 microkernel, a small operating system kernel that distinguishes between trusted and untrusted software, resistent to hacking",FALSE,2011,2011,
-Hurricane Yasi destroys Queensland's banana crop,FALSE,2011,2011,
+"National ICT Australia and Open Kernel Labs release seL4 microkernel, a small operating system kernel that distinguishes between trusted and untrusted software, resistant to hacking",FALSE,2011,2011,
+"Queensland floods, starting Sep 2010 with rains that culminated in Cyclone Tasha in Dec 2010, flooding Brisbane in Jan 2011, followed by Cyclone Yasi in Feb 2011",FALSE,2010,2011,
 CSIRO produce the first vaccine to protect horses from the Hendra virus,FALSE,2012,2012,
 Researchers from the University of New South Wales build the first quantum bit,FALSE,2012,2012,
 Fourth inquest into Azaria Chamberlain's death finds that she died from being attacked or taken by a dingo,FALSE,2012,2012,12/06/2012
@@ -593,22 +602,25 @@ Mercy Health identify a blood test that can help prevent stillbirths,FALSE,2013,
 Bureau of Meteorology adds a new colour to take the temperature scale up to 54°C,FALSE,2013,2013,1/01/2013
 Nova Peris becomes Australia's first Indigenous woman elected to federal parliament,TRUE,2013,2013,
 National Disability Insurance Scheme (NDIS) introduced,FALSE,2013,2013,1/07/2013
+"Dark Emu by Bruce Pascoe is published, citing colonial accounts and archaeological evidence of sedentary agricultural settlements by Aboriginal and Torres Strait Islanders",TRUE,2014,2014,
 High Court of Australia recognises non-specific sex identification,FALSE,2014,2014,
 "Malaysian Airlines Flight MH370 disappears, possibly over the Indian Ocean",FALSE,2014,2014,8/03/2014
 Russian militants shoot down Malaysian Airlines Flight MH17 over Ukraine,FALSE,2014,2014,17/07/2014
 Engineers at the University of New South Wales build the first quantum logic gate,FALSE,2015,2015,
-"Melbourne thunderstorm results in approx 8,500 hospital admissions for asthma and related respiratory symptoms",FALSE,2016,2016,21/11/2016
+"Melbourne thunderstorm results in approximately 8,500 hospital admissions for asthma and related respiratory symptoms",FALSE,2016,2016,21/11/2016
 Sydney Lindt Café siege,FALSE,2016,2016,16/12/2016
 "Car used to run down people in Bourke St, Melbourne",FALSE,2017,2017,20/01/2017
 Uluru Statement from the Heart,TRUE,2017,2017,
 First game in the AFL Women's competition,FALSE,2017,2017,3/02/2017
 The Darlington Statement on intersex rights is agreed to,FALSE,2017,2017,
-"Victoria becomes the first State to pass a Voluntary Assisted Dying (euthenasia) law, after the Federal Government overrode the Northern Territory's law of 1995.",FALSE,2017,2017,29/11/2017
+"Victoria becomes the first State to pass a Voluntary Assisted Dying (euthanasia) law, after the Federal Government overrode the Northern Territory's law of 1995.",FALSE,2017,2017,29/11/2017
 Same sex marriage becomes legal in Australia,FALSE,2017,2017,9/12/2017
 International Campaign to Abolish Nuclear Weapons (ICAN) wins Nobel Peace Prize,FALSE,2017,2017,10/12/2017
-"Car used to ram people corner of Flinders St and Eliizabeth St, Melbourne",FALSE,2017,2017,21/12/2017
+"Car used to ram people corner of Flinders St and Elizabeth St, Melbourne",FALSE,2017,2017,21/12/2017
 "Govt of Victoria, RMIT University, and Swinburne University with Professor Blamey and Professor Elaine Saunders release the first modular hearing aid",FALSE,2018,2018,
 Timber Creek case determines the approach for resolving native title compensation claims,TRUE,2019,2019,
 AFL provides an apology to Adam Goodes,TRUE,2019,2019,7/06/2019
-"Black Summer bushfires kills nearly 500 people, between 2019 and 2020",FALSE,2019,2019,
-The first case of COVID-19 is confirmed in Australia,FALSE,2020,2020,
+"Black Summer bushfires kill nearly 500 people, between 2019 and 2020",FALSE,2019,2019,
+The first case of COVID-19 is confirmed in Australia,FALSE,2020,2020,25/01/2020
+"Rio Tinto destroys culturally and archeologically significant rock shelters in Juukan Gorge, Pilbara under the Aboriginal Heritage Act 1972 (WA) with minister approval",TRUE,2020,2020,24/05/2020
+Queensland and New South Wales hit by floods throughout Feb and Mar causing $4.3 billion in damages and 22 deaths,FALSE,2022,2022,

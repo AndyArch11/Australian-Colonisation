@@ -2424,5 +2424,5 @@ else:
     output_file_name = 'Australia in 2 minutes - a White history.mp4'
 
 #ffmpeg
-anim.save(output_file_name, extra_args=['-vcodec', 'h264', '-framerate', '2', '-vf', 'fps=24', '-pix_fmt', 'yuv420p'])
-#plt.show()
+#anim.save(output_file_name, extra_args=['-vcodec', 'h264', '-framerate', '2', '-vf', 'fps=24', '-pix_fmt', 'yuv420p'])
+plt.show()

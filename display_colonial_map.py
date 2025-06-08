@@ -27,10 +27,12 @@ import matplotlib.animation as animation
 import cartopy.crs as ccrs
 import cartopy
 
+output_file = True
+output_console = not output_file
 
 #Select what to display
 display_state_boundaries = True
-loop_display = False
+loop_display = True
 
 display_colonisation = True
 display_blak_history = True
@@ -1196,6 +1198,7 @@ def add_australian_defining_moments(current_year, list_items):
 
     if display_blak_history:
         active_moments = defining_moments[((defining_moments['From'] <= current_year) & ((defining_moments['To'] >= current_year) | (defining_moments['To'].isna())))]
+        active_moments = active_moments.sort_values(by=['From'], ascending=[False])
         past_moments = defining_moments[((defining_moments['To'] > current_year - citizen_memory) & (defining_moments['To'] < current_year))]
         past_moments = past_moments.sort_values(by=['To', 'From'], ascending=[False, True])
     else:
@@ -1226,6 +1229,7 @@ def add_australian_defining_moments(current_year, list_items):
         past_moments_with_wrapped_lines = []
 
         if active_moments.size > 0:  
+            active_moments = active_moments.iloc[::-1] # reverse the order to display the oldest entries at the top
             for active_moment in active_moments.itertuples():
                 initial_indent = "".join([str(active_moment[3]), ": "])
                 wrapped_lines = textwrap.wrap(text=active_moment[1], width=50, initial_indent=initial_indent, subsequent_indent="      ")
@@ -2423,6 +2427,8 @@ elif display_blak_history:
 else:
     output_file_name = 'Australia in 2 minutes - a White history.mp4'
 
-#ffmpeg
-#anim.save(output_file_name, extra_args=['-vcodec', 'h264', '-framerate', '2', '-vf', 'fps=24', '-pix_fmt', 'yuv420p'])
-plt.show()
+if output_file:
+    #ffmpeg
+    anim.save(output_file_name, extra_args=['-vcodec', 'h264', '-framerate', '2', '-vf', 'fps=24', '-pix_fmt', 'yuv420p'])
+if output_console:
+    plt.show()

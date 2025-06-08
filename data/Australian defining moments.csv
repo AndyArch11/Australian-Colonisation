@@ -1,6 +1,7 @@
 ﻿Event,Blak Hx,From,To,Date
 Commander James Cook claims the east coast of Australia for Britain in his first voyage to the Pacific,FALSE,1770,1770,22/8/1770
 "On his third and ill-fated last voyage to the Pacific, Captain James Cook makes landfall in Tasmania at Adventure Bay, Bruny Island",FALSE,1777,1777,26/1/1777
+"Following the American Revolutionary War, America refused to take any more convicts, so Britain had to find somewhere else to send their convicts",FALSE,1783,1783,3/9/1783
 "The Colony of New South Wales declared by the Kingdom of Great Britain 25th April 1787, east of 135° east and all islands adjacent in the Pacific Ocean between the latitudes of 10°37' south and 43°39' south, including most of New Zealand",FALSE,1787,1787,25/4/1787
 "The First Fleet arrives, landing at Sydney Cove 26th Jan 1788 bearing 543 convict men and 189 convict women",FALSE,1788,1788,26/1/1788
 Governor Arthur Phillip proclaimed the establishment of the Colony of New South Wales; 7th Feb 1788,FALSE,1788,1788,7/2/1788
@@ -33,6 +34,7 @@ The first successful introduction of European honey bees,FALSE,1822,1822,
 "John Thomas Bigge's 'The State of the Colony of New South Wales' is published, leading to harsher treatment of convicts",FALSE,1822,1822,19/6/1822
 The first Clydesdale horses arrive in Van Diemen's Land,FALSE,1824,1824,
 "First print of the Hobart Town Gazette, first free press publication in Australia",FALSE,1824,1824,4/6/1824
+Water Buffalo introduced to Melville Island and Cobourg Peninsula,FALSE,1825,1825,
 "Founding of Brisbane, Moreton Bay Penal Settlement",FALSE,1825,1825,22/1/1825
 "New South Wales extended west to 129° east, including Melville Island, and adjacent islands latitude moved north to 39°12' south, only encompassing a small section of New Zealand",FALSE,1825,1825,16/7/1825
 The southern islands of New South Wales made the Colony of Van Diemen's Land,FALSE,1825,1825,3/12/1825
@@ -161,6 +163,7 @@ Arthur James Arnot patents the first electric drill,FALSE,1889,1889,
 Henry Parkes' Tenterfield Oration calling for federation,FALSE,1889,1889,24/10/1889
 Flu pandemic,FALSE,1890,1890,
 Julian Ashton School of Arts / Sydney Art School opens in Sydney,FALSE,1890,1890,
+"""Banjo"" Paterson pens the poem; 'The Man from Snowy River'",FALSE,1890,1890,26/4/1890
 Economic Depression - 1890 - 1893,FALSE,1890,1893,
 Maritime and Shearers' strikes,FALSE,1890,1891,
 Creation of the Australian Labor Party,FALSE,1891,1891,3/7/1891
@@ -171,12 +174,16 @@ Arthur Patrick McCormick invents the Coolgardie safe for preserving and keeping 
 "Woman's suffrage introduced in South Australia, first electorate in the world",FALSE,1894,1894,
 "Federation Drought; 1895 - 1903, the worst since the start of European settlement",FALSE,1895,1903,
 Heat wave in south-eastern Australia kills 427 people,FALSE,1895,1895,
+"""Banjo"" Paterson composes the ballad 'Waltzing Matilda'",FALSE,1895,1895,
 Edwin Flack becomes Australia's first Olympian,FALSE,1896,1896,
 "One-guinea Pocket Kodak cameras are introduced into Australia. Over 3,000 are sold within two months",FALSE,1896,1896,
+Earliest surviving motion picture film shot in Australia; Patineur Grotesque (aka The Humorous Rollerskater),FALSE,1896,1896,
 "The inaugural season of the Victorian Football League (VFL), having formed out of the VFA",FALSE,1897,1897,
+"The Salvation Army sets up Australia's first film studio for the Limelight Department in Melbourne, which had been formed in 1892",FALSE,1897,1897,
 Crown Studios in Sydney introduces colour photography using the three-exposure Joly and Ives process,FALSE,1899,1899,
 Three-minute automatic photo booths are established in Sydney,FALSE,1899,1899,
 "Australia's deadliest Cyclone Mahina at Bathurst Bay, Queensland with over 410 deaths",FALSE,1899,1899,4/3/1899
+The world's first government films produced in Queensland by Fred Wills for the Department of Agriculture,FALSE,1899,1899,
 Bubonic plague arrives in Australia,FALSE,1900,1900,19/01/1900
 "The Kodak Brownie, the first mass-marketed camera, is released",FALSE,1900,1900,
 Neville Howse becomes the first Australian to receive a Victoria Cross while serving with the NSW Army Medical Corps in the Second South African (Boer) War,FALSE,1900,1900,24/07/1900
@@ -383,6 +390,7 @@ Heard Island and McDonald Islands are formally declared the Territory of Heard I
 Dr David Warren invents the black box flight recorder,FALSE,1954,1954,
 "Soviet spies, Vladimir and Evdokia Petrov masquerading as diplomats, defect to Australia",FALSE,1954,1954,3/04/1954
 Australia's first Uranium mining commenced at the Rum Jungle mine in Northern Territory,FALSE,1954,1954,17/09/1954
+"The first film to star Aboriginal actors, Jedda is released",TRUE,1955,1955,
 Edward Bowen of the CSIRO invented and developed the Distance Measuring Equipment (DME) used to measure the distance between a plane and a ground station for navigation,FALSE,1955,1955,
 Hunter Valley floods in New South Wales,FALSE,1955,1955,
 "Democratic Labor Party formed from a Labor Party split, partially stemming from fallout from the Petrov affair",FALSE,1955,1955,14/03/1955
@@ -548,6 +556,7 @@ Mabo native title case recognised in High Court decision,TRUE,1992,1992,3/06/199
 The first Indigenous owned restaurant in Victoria (and possibly Australia) opens in Halls Gap - the Branbuk Koori Restaurant or Gugidjela,TRUE,1992,1992,
 AFL player Nick Winmar responds to racist abuse from spectators,TRUE,1993,1993,17/04/1993
 "The Native Title Act is passed, intended to provide a national system for the recognition and protection of native title",TRUE,1993,1993,
+Elaine George becomes the first Aboriginal model to appear on the cover of the Australian edition of Vogue magazine,TRUE,1993,1993,
 "Australian dogs withdrawn from Antarctica, having been used there since the 1950s",FALSE,1993,1993,15/12/1993
 Bruce Macdonald at the Australian Institute of Marine Science develops the first underwater computer which included a five-button handheld keypad,FALSE,1993,1993,
 "Jim Frazier designs the Frazier lens which provides a very large depth of field, allowing both the foreground and background to be in focus",FALSE,1993,1993,
